@@ -1,0 +1,37 @@
+.bg-black {
+  background-color: $black;
+}
+.text-size-14 {
+  font-size: 14px;
+}
+.nav-link {
+  color: $white;
+}
+.nav-link :hover {
+  color: $white;
+}
+
+// font
+
+.font-cs-n {
+  font-family: "Circular Std Book";
+  font-weight: normal;
+  font-style: normal;
+}
+.font-cs-b {
+  font-family: "Circular Std";
+  font-weight: bold;
+  font-style: normal;
+}
+.font-cs-r{
+  font-family: 'Circular Std';
+  font-weight: 500;
+  font-style: normal;
+}
+.font-cs-9{
+  font-family: 'Circular Std';
+  font-weight: 900;
+  font-style: normal;
+}
+
+// 

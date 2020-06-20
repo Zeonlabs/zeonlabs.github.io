@@ -1,0 +1,324 @@
+// Mobile Header
+
+// hide menu web
+.mobile-header {
+  background-color: $black;
+}
+@media (max-width: 991px) {
+  .hide-web-menu {
+    display: none;
+  }
+  .mobile-header {
+    display: flex;
+    padding: 16px 16px 16px 17px;
+  }
+  // logo
+  // .custom-logo-max{
+  //   width: 40%;
+  // }
+
+  .logo-mobile {
+    width: 100%;
+    padding-left: 6px;
+  }
+  .mobile-menu {
+  }
+  .logo-sidebar {
+    padding: 16px 16px 16px 17px;
+
+    a {
+      padding-left: 6px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .mobile-header {
+    display: none;
+  }
+}
+input {
+  display: none;
+}
+.open {
+  background-color: #ffffff;
+  width: 24px;
+  height: 2px;
+  display: block;
+  border-radius: 0px;
+  cursor: pointer;
+  position: relative;
+  top: 8px;
+}
+
+.open:before {
+  content: "";
+  background-color: #ffffff;
+  width: 24px;
+  height: 2px;
+  display: block;
+  border-radius: 0px;
+  position: relative;
+  top: -8px;
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+}
+
+.open:after {
+  content: "";
+  background-color: #ffffff;
+  width: 24px;
+  height: 2px;
+  display: block;
+  border-radius: 0px;
+  position: relative;
+  top: 6px;
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+}
+
+.menuOpen {
+  width: 24px;
+  height: 20px;
+  display: block;
+  padding: 8px 32px 16px 0px;
+  cursor: pointer;
+  float: right;
+}
+
+.menuOpen:hover .open:before {
+  top: -9px;
+}
+
+.menuOpen:hover .open:after {
+  top: 6px;
+}
+
+.menu {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgb(255, 255, 255);
+}
+
+.menu label {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.menu .menuContent {
+  //   position: relative;
+  //   top: calc(-5% + 66px);
+  //   top: calc(20% + 66px);
+  //   font-size: 54px;
+  //   text-align: center;
+  //   padding-bottom: 20px;
+  //   margin-top: -170px;
+  //   padding-left: 50px;
+  position: fixed;
+  top: 15%;
+  font-size: 54px;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-left: 50px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+.menu ul li {
+  width: fit-content;
+}
+.cb-menu-title {
+  color: $gray-500;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: left;
+}
+.menu ul li a {
+  display: block;
+  color: $black;
+  text-decoration: none;
+  transition: color 0.2s;
+  text-align: left;
+}
+.cb-menu-nav-item.-marked a:before {
+  transform: scaleY(1);
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  width: 286px;
+}
+#email {
+  margin-top: -30px !important;
+}
+.cb-menu-mail {
+  position: fixed;
+  bottom: 15px;
+}
+@media (max-width: 420px) {
+  .menu .menuContent {
+    font-size: 38px;
+  }
+  .cb-menu-nav-item.-marked a:before {
+    width: 218px;
+  }
+  //   .cb-menu-mail {
+  //     position: fixed;
+  //     bottom: 15px;
+  //   }
+  .cb-menu-mail #email {
+    margin-top: -22px !important;
+  }
+}
+
+.cb-menu-mail a:after,
+.cb-menu-mail a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 170px;
+  right: 0;
+  bottom: 14px;
+  height: 1px;
+  background: $gray-500;
+}
+.f-20 {
+  font-size: 20px;
+}
+.cb-menu-nav-item a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  height: 1px;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: right center;
+  -moz-transform-origin: right center;
+  -ms-transform-origin: right center;
+  -o-transform-origin: right center;
+  transform-origin: right center;
+  background: currentColor;
+  -webkit-transition: -webkit-transform 0.5s, -webkit-transform-origin 0s;
+  transition: -webkit-transform 0.5s, -webkit-transform-origin 0s;
+  -o-transition: -o-transform 0.5s, -o-transform-origin 0s;
+  -moz-transition: transform 0.5s, transform-origin 0s, -moz-transform 0.5s,
+    -moz-transform-origin 0s;
+  transition: transform 0.5s, transform-origin 0s;
+  transition: transform 0.5s, transform-origin 0s, -webkit-transform 0.5s,
+    -moz-transform 0.5s, -o-transform 0.5s, -webkit-transform-origin 0s,
+    -moz-transform-origin 0s, -ms-transform-origin 0s, -o-transform-origin 0s;
+}
+.menu ul li a:hover {
+  color: #b9b9b9;
+}
+
+.menu ul li:hover {
+  background: transparent;
+}
+
+.menuEffects {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.menuEffects ul {
+  transform: translate(0%, 0px);
+  transition: all 0.5s;
+}
+
+#menuToggle:checked ~ .menuEffects {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s;
+}
+
+#menuToggle:checked ~ .menuEffects ul {
+  opacity: 1;
+}
+
+#menuToggle:checked ~ .menuOpen .open {
+  background-color: white;
+}
+
+#menuToggle:checked ~ .menuOpen .open:before {
+  content: "";
+  background-color: rgb(0, 0, 0);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#menuToggle:checked ~ .menuOpen .open:after {
+  content: "";
+  background-color: rgb(0, 0, 0);
+  transform: rotate(-45deg);
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#menuToggle:not(:checked) ~ .menuEffects ul {
+  transform: translateX(30%);
+}
+
+
+// text hover
+// Text Effect Styles
+.link--kukuri {
+    text-transform: uppercase;
+    font-weight: 900;
+    overflow: hidden;
+    line-height: 0.75;
+    color: #b2b0a9;
+  
+    &:hover {
+      color: #b2b0a9;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      height: 16px;
+      width: 100%;
+      top: 50%;
+      margin-top: -8px;
+      right: 0;
+      background: #f9f9f9;
+      transform: translate3d(-100%,0,0);
+      transition: transform 0.4s;
+      transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    }
+    &:hover::after {
+      transform: translate3d(100%,0,0);
+    }
+    &::before{
+      content: attr(data-letters);
+      position: absolute;
+      z-index: 2;
+      overflow: hidden;
+      color: #424242;
+      white-space: nowrap;
+      width: 0%;
+      transition: width 0.4s 0.3s;
+    }
+    &:hover::before {
+      width: 100%;
+    }
+  }
