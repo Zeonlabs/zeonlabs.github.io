@@ -10906,11 +10906,11 @@ a.effect-shine:hover {
 
 .home {
   background-color: #000;
-  height: 100vh;
 }
 
 .button-view-work {
   margin-top: calc(100vh - 95vh);
+  margin-bottom: 35px;
 }
 
 .title .mega-font {
