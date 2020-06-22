@@ -1,6 +1,12 @@
 .bg-black {
   background-color: $black;
 }
+.bg-red {
+  background-color: #d92929;
+}
+.bg-blue {
+  background-color: #2f77eb;
+}
 .text-size-14 {
   font-size: 14px;
 }
@@ -23,13 +29,13 @@
   font-weight: bold;
   font-style: normal;
 }
-.font-cs-r{
-  font-family: 'Circular Std';
+.font-cs-r {
+  font-family: "Circular Std";
   font-weight: 500;
   font-style: normal;
 }
-.font-cs-9{
-  font-family: 'Circular Std';
+.font-cs-9 {
+  font-family: "Circular Std";
   font-weight: 900;
   font-style: normal;
 }
@@ -71,16 +77,16 @@ a.effect-shine:hover {
 }
 // Home
 
-.home{
+.home {
   background-color: $black;
   height: 100vh;
 }
-.button-view-work{
+.button-view-work {
   margin-top: calc(100vh - 98vh);
   margin-bottom: calc(100vh - 95vh);
 }
 // Home Content
-.home-content{
+.home-content {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -130,13 +136,11 @@ a.effect-shine:hover {
   @media (max-width: 583px) {
     .mega-font {
       font-size: 2.5rem;
-      
     }
   }
   @media (max-width: 583px) {
     .mega-font {
       font-size: 2.4rem;
-      
     }
   }
   @media (max-width: 492px) {
@@ -149,14 +153,13 @@ a.effect-shine:hover {
       font-size: 2.5rem;
       line-height: 50px;
     }
-    
   }
   @media (max-width: 360px) {
     .mega-font {
-      font-size: 1.6rem ;
+      font-size: 1.6rem;
       line-height: 50px;
     }
-    .sub-text{
+    .sub-text {
       font-size: 16px !important;
       line-height: 20px !important;
     }
@@ -171,9 +174,8 @@ a.effect-shine:hover {
     letter-spacing: 0.02em;
     color: #c5c5c5;
     padding: 0;
-    margin-top: calc(100vh - 98vh) ;
+    margin-top: calc(100vh - 98vh);
   }
-
 }
 
 // =============================================
@@ -204,6 +206,41 @@ a.effect-shine:hover {
   outline: none;
 }
 
-.margin{
+.margin {
   margin-top: calc(16px + 5vw);
+}
+
+// Padding
+
+@media (min-width: 1200px) {
+  .pb-xl-10,
+  .py-xl-10 {
+    padding-bottom: 4.5rem !important;
+  }
+}
+@media (min-width: 1200px) {
+  .pt-xl-10,
+  .py-xl-10 {
+    padding-top: 4.5rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .pb-md-8,
+  .py-md-8 {
+    padding-bottom: 3.5rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .pt-md-8,
+  .py-md-8 {
+    padding-top: 3.5rem !important;
+  }
+  .pb-7,
+  .py-7 {
+    padding-bottom: 3rem !important;
+  }
+  .pt-7,
+  .py-7 {
+    padding-top: 3rem !important;
+  }
 }
