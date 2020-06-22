@@ -10818,6 +10818,10 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.color-gray {
+  color: #979797;
+}
+
 .bg-black {
   background-color: #000;
 }
@@ -11127,6 +11131,21 @@ a.effect-shine:hover {
 .underline:hover:after {
   width: 90%;
   background: #000;
+}
+
+.recent-work {
+  overflow: overlay;
+}
+
+.ser-title {
+  font-size: 20px;
+}
+
+.service-list {
+  padding-left: 0;
+  list-style: none;
+  line-height: 34px;
+  font-size: 16px;
 }
 
 .mobile-header {

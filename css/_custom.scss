@@ -1,5 +1,8 @@
 $blue-t:#2f77eb;
 
+.color-gray{
+  color: #979797;
+}
 .bg-black {
   background-color: $black;
 }
@@ -296,4 +299,19 @@ a.effect-shine:hover {
   
  width: 90%;
  background: $black;
+}
+
+// our services list
+
+.recent-work{
+  overflow: overlay;
+}
+.ser-title{
+  font-size: 20px;
+}
+.service-list{
+    padding-left: 0;
+    list-style: none;
+    line-height: 34px;
+    font-size: 16px;
 }
