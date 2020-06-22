@@ -73,7 +73,7 @@ a.effect-shine:hover {
 
 .home{
   background-color: $black;
-  // height: 100vh;
+  height: 100vh;
 }
 .button-view-work{
   margin-top: calc(100vh - 95vh);
@@ -97,6 +97,11 @@ a.effect-shine:hover {
     color: #ffffff;
   }
 
+  @media (min-width: 1199px) {
+    .mega-font {
+      font-size: 6rem;
+    }
+  }
   @media (max-width: 1199px) {
     .mega-font {
       font-size: 4rem;
@@ -105,13 +110,12 @@ a.effect-shine:hover {
   @media (max-width: 991px) {
     .mega-font {
       font-size: 3.5rem;
-      
+      padding-top: 4.5vh;
     }
   }
   @media (max-width: 767px) {
     .mega-font {
       font-size: 2.8rem;
-      
     }
   }
 
@@ -167,6 +171,7 @@ a.effect-shine:hover {
   font-size: 14px;
   outline: none;
   padding: 16px 42px 16px 42px;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 .button-wb:hover {
   color: black;

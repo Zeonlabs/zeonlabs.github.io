@@ -569,7 +569,7 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1400px;
   }
 }
 
@@ -601,7 +601,7 @@ pre code {
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1200px;
+    max-width: 1400px;
   }
 }
 
@@ -10906,6 +10906,7 @@ a.effect-shine:hover {
 
 .home {
   background-color: #000;
+  height: 100vh;
 }
 
 .button-view-work {
@@ -10926,6 +10927,12 @@ a.effect-shine:hover {
   color: #ffffff;
 }
 
+@media (min-width: 1199px) {
+  .title .mega-font {
+    font-size: 6rem;
+  }
+}
+
 @media (max-width: 1199px) {
   .title .mega-font {
     font-size: 4rem;
@@ -10935,6 +10942,7 @@ a.effect-shine:hover {
 @media (max-width: 991px) {
   .title .mega-font {
     font-size: 3.5rem;
+    padding-top: 4.5vh;
   }
 }
 
@@ -10993,6 +11001,8 @@ a.effect-shine:hover {
   font-size: 14px;
   outline: none;
   padding: 16px 42px 16px 42px;
+  -webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 .button-wb:hover {
