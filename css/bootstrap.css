@@ -10910,8 +10910,8 @@ a.effect-shine:hover {
 }
 
 .button-view-work {
-  margin-top: calc(100vh - 95vh);
-  margin-bottom: 38px;
+  margin-top: calc(100vh - 90vh);
+  margin-bottom: calc(100vh - 95vh);
 }
 
 .home-content {
@@ -11000,6 +11000,7 @@ a.effect-shine:hover {
   letter-spacing: 0.02em;
   color: #c5c5c5;
   padding: 0;
+  margin-top: calc(100vh - 90vh);
 }
 
 .button-wb {
