@@ -149,14 +149,16 @@ a.effect-shine:hover {
       font-size: 2.5rem;
       line-height: 50px;
     }
-    .sub-text{
-      font-size: 16px;
-      line-height: 20px;
-    }
+    
   }
-  @media (max-width: 375px) {
+  @media (min-width: 360px) {
     .mega-font {
-      font-size: 1.6rem;
+      font-size: 1.6rem ;
+      line-height: 50px;
+    }
+    .sub-text{
+      font-size: 16px ;
+      line-height: 20px ;
     }
   }
   .sub-text {
@@ -185,7 +187,7 @@ a.effect-shine:hover {
   font-size: 14px;
   outline: none;
   padding: 16px 42px 16px 42px;
-  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in, color 0.5s ease-in;
 }
 .button-wb:hover {
   color: black;
