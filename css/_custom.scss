@@ -1,3 +1,5 @@
+$blue-t:#2f77eb;
+
 .bg-black {
   background-color: $black;
 }
@@ -5,7 +7,7 @@
   background-color: #d92929;
 }
 .bg-blue {
-  background-color: #2f77eb;
+  background-color: $blue-t;
 }
 .text-size-14 {
   font-size: 14px;
@@ -93,6 +95,10 @@ a.effect-shine:hover {
   transform: translate(-50%, -50%);
 }
 
+.row{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
 // ===============================================================================
 // ============================== Mega text ======================================
 // ===============================================================================
@@ -243,4 +249,51 @@ a.effect-shine:hover {
   .py-7 {
     padding-top: 3rem !important;
   }
+}
+
+// See more button
+.underline {
+  position: relative; 
+  text-decoration: none;
+    color: black;
+    outline: none
+}   
+.underline:hover{
+  text-decoration: none;
+    color: black;
+    outline: none
+}
+.underline:after {
+   position: absolute;
+   content: '';
+   height: 2px;
+ /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+   bottom: -4px; 
+
+
+  /****** 
+  optional values below 
+  ******/
+   
+   /* center - (optional) use with adjusting width   */
+   margin: 0 auto;
+ left: 0;
+   right: 0;
+ width: 50%;
+ background: $black;
+ 
+ /* optional animation */
+ -o-transition:.5s;
+   -ms-transition:.5s;
+   -moz-transition:.5s;
+   -webkit-transition:.5s;
+   transition:.5s;
+}
+
+
+/* optional hover classes used with anmiation */
+.underline:hover:after {
+  
+ width: 90%;
+ background: $black;
 }
