@@ -11221,6 +11221,10 @@ a.effect-shine:hover {
   padding: 20px 9px;
 }
 
+.tab-content .sub-text {
+  font-size: 14px;
+}
+
 .dis-flex {
   display: -webkit-box;
   display: -ms-flexbox;
