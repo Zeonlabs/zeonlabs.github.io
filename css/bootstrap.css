@@ -11198,7 +11198,11 @@ a.effect-shine:hover {
 }
 
 .toggle .panels .panel:first-child {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 @media (min-width: 767px) {
@@ -11211,6 +11215,10 @@ a.effect-shine:hover {
 
 .tech-section-max-width {
   max-width: 1140px;
+}
+
+.tab-content {
+  padding: 20px 9px;
 }
 
 .mobile-header {
