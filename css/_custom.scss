@@ -12,6 +12,9 @@ $gray-off: #979797;
 .bg-blue {
   background-color: $blue-t;
 }
+.bg-gray{
+  background-color: #f9f9f9;
+}
 .text-size-14 {
   font-size: 14px;
 }
@@ -215,6 +218,32 @@ a.effect-shine:hover {
   outline: none;
 }
 
+// black button
+
+.button-bw{
+  color: $black;
+  background-color: #f9f9f9;
+  border: 1.5px solid $black;
+  font-size: 14px;
+  outline: none;
+  padding: 18px 50px 16px 50px;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+.button-bw:hover {
+  color: $white;
+  background-color: $black;
+  border: 1.5px solid $white;
+  font-size: 14px;
+  outline: none;
+}
+.button-bw:active {
+  color: $black;
+  background-color: $white;
+  border: 1.5px solid $white;
+  font-size: 14px;
+  outline: none;
+}
+
 .margin {
   margin-top: calc(16px + 5vw);
 }
@@ -364,10 +393,12 @@ a.effect-shine:hover {
 .toggle .panels .panel {
   padding: 20px 10px;
   display: none;
+  
 }
 .toggle .panels .panel:first-child {
   display: flex;
   justify-content: space-around;
+
 }
 @media (min-width: 767px) {
   .toggle .tabs {

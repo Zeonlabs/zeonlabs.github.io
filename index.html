@@ -10,7 +10,7 @@
   <!-- ========================== CSS ========================== -->
   <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./font/fontstyle.css">
-
+  <style id="clock-animations"></style>
   <script src="./js/jquery-3.2.1.min.js"></script>
   <!-- ======================== favicon ======================== -->
   <link rel="icon" href="demo_icon.gif" type="image/gif" sizes="16x16">
@@ -356,7 +356,7 @@
             </div>
           </div>
           <div class='panels'>
-<!-- Mobile tech -->
+            <!-- Mobile tech -->
             <div class='panel mobile-tab tab-data row'>
               <div class="tab-content col-4 col-sm-4 col-md-3 col-lg-2 text-center">
                 <img src="./Images/ios_icon.svg">
@@ -389,7 +389,7 @@
             </div>
 
             <div class='panel mobile-tab tab-data '>
-<!-- front end -->
+              <!-- front end -->
               <div class="dis-flex row">
                 <div class="tab-content col-4 col-sm-4 col-md-3 col-lg-2 text-center">
                   <img src="./Images/react_netive_icon.svg">
@@ -494,30 +494,30 @@
                   <img src="./Images/magento_icon.svg">
                   <h6 class="mt-4 font-cs-r sub-text">Magento</h6>
                 </div>
-               
+
               </div>
 
             </div>
             <div class='panel'>
-                <!-- Cloud devops -->
-                <div class="dis-flex row">
-                  <div class="tab-content col-6 col-sm-4 col-md-3 col-lg-2 text-center">
-                    <img src="./Images/AWS_icon.svg">
-                    <h6 class="mt-4 font-cs-r sub-text">AWS</h6>
-                  </div>
-                  <div class="tab-content col-6 col-sm-4 col-md-3 col-lg-2 text-center">
-                    <img src="./Images/google_cloud_icon.svg">
-                    <h6 class="mt-4 font-cs-r sub-text">Google Cloud</h6>
-                  </div>
-                  <div class="tab-content col-6 col-sm-4 col-md-3 col-lg-2 text-center">
-                    <img src="./Images/ibm_cloud_icon.svg">
-                    <h6 class="mt-4 font-cs-r sub-text">IBM Cloud</h6>
-                  </div>
-                  <div class="tab-content col-6 col-sm-4 col-md-3 col-lg-2 text-center">
-                    <img src="./Images/digi_ocean_icon.svg">
-                    <h6 class="mt-4 font-cs-r sub-text">Digital Ocean</h6>
-                  </div>
+              <!-- Cloud devops -->
+              <div class="dis-flex row">
+                <div class="tab-content col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                  <img src="./Images/AWS_icon.svg">
+                  <h6 class="mt-4 font-cs-r sub-text">AWS</h6>
                 </div>
+                <div class="tab-content col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                  <img src="./Images/google_cloud_icon.svg">
+                  <h6 class="mt-4 font-cs-r sub-text">Google Cloud</h6>
+                </div>
+                <div class="tab-content col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                  <img src="./Images/ibm_cloud_icon.svg">
+                  <h6 class="mt-4 font-cs-r sub-text">IBM Cloud</h6>
+                </div>
+                <div class="tab-content col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                  <img src="./Images/digi_ocean_icon.svg">
+                  <h6 class="mt-4 font-cs-r sub-text">Digital Ocean</h6>
+                </div>
+              </div>
             </div>
 
           </div>
@@ -528,7 +528,66 @@
     </div>
   </section>
 
+  <!-- -------------------------------------------------------------------------------------------
+  ------------------------------------------------- Let's talk -----------------------------------
+  ------------------------------------------------------------------------------------------------ -->
 
+  <section id="#our_services" class="recent-work bg-gray py-xl-12 py-md-8 py-7">
+    <div class="container mt-4 mb-5 tech-section-max-width">
+      <div>
+        <h2 class="font-cs-b text-black text-center pb-2 mb-4 font-cs-b">Let's create something amazing together!</h2>
+      </div>
+
+      <div class="text-center mt-5">
+        <button class="button-bw text-uppercase font-cs-b">Contact us</button>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- -------------------------------------------------------------------------------------------
+  ------------------------------------------------- Let's talk -----------------------------------
+  ------------------------------------------------------------------------------------------------ -->
+
+  <section id="#our_services" class="bg-black py-xl-12 py-md-8 py-7">
+    <div class="container mt-5 mb-5">
+
+      <div class="row">
+        <div class="col-xl-6">
+          <div class="clock ">
+            <div class="clock-wrapper ">
+              <div class="clock-base ">
+                <div class="clock-dial ">
+                  <div class="clock-indicator"></div>
+                  <div class="clock-indicator"></div>
+                  <div class="clock-indicator"></div>
+                  <div class="clock-indicator"></div>
+                  <div class="clock-indicator"></div>
+                  <div class="clock-indicator"></div>
+                  <div class="clock-indicator"></div>
+                  <div class="clock-indicator"></div>
+                  <div class="clock-indicator"></div>
+                  <div class="clock-indicator"></div>
+                  <div class="clock-indicator"></div>
+                  <div class="clock-indicator"></div>
+                </div>
+                <div class="clock-hour"></div>
+                <div class="clock-minute"></div>
+                <div class="clock-second"></div>
+                <div class="clock-center"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6">
+          <div class="clock">
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
 </body>
 
 <script>
@@ -575,6 +634,29 @@
 
   }).call(this);
 
+</script>
+
+<script>
+  // clock
+  (function () {
+
+    //generate clock animations
+    var now = new Date(),
+      hourDeg = now.getHours() / 12 * 360 + now.getMinutes() / 60 * 30,
+      minuteDeg = now.getMinutes() / 60 * 360 + now.getSeconds() / 60 * 6,
+      secondDeg = now.getSeconds() / 60 * 360,
+      stylesDeg = [
+        "@-webkit-keyframes rotate-hour{from{transform:rotate(" + hourDeg + "deg);}to{transform:rotate(" + (hourDeg + 360) + "deg);}}",
+        "@-webkit-keyframes rotate-minute{from{transform:rotate(" + minuteDeg + "deg);}to{transform:rotate(" + (minuteDeg + 360) + "deg);}}",
+        "@-webkit-keyframes rotate-second{from{transform:rotate(" + secondDeg + "deg);}to{transform:rotate(" + (secondDeg + 360) + "deg);}}",
+        "@-moz-keyframes rotate-hour{from{transform:rotate(" + hourDeg + "deg);}to{transform:rotate(" + (hourDeg + 360) + "deg);}}",
+        "@-moz-keyframes rotate-minute{from{transform:rotate(" + minuteDeg + "deg);}to{transform:rotate(" + (minuteDeg + 360) + "deg);}}",
+        "@-moz-keyframes rotate-second{from{transform:rotate(" + secondDeg + "deg);}to{transform:rotate(" + (secondDeg + 360) + "deg);}}"
+      ].join("");
+
+    document.getElementById("clock-animations").innerHTML = stylesDeg;
+
+  })();
 </script>
 
 </html>
