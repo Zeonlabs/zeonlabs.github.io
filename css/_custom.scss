@@ -1,7 +1,7 @@
-$blue-t:#2f77eb;
-
-.color-gray{
-  color: #979797;
+$blue-t: #2f77eb;
+$gray-off:#979797;
+.color-gray {
+  color: $gray-off;
 }
 .bg-black {
   background-color: $black;
@@ -98,7 +98,7 @@ a.effect-shine:hover {
   transform: translate(-50%, -50%);
 }
 
-.row{
+.row {
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
@@ -137,6 +137,7 @@ a.effect-shine:hover {
     }
   }
   @media (max-width: 767px) {
+    
     .mega-font {
       font-size: 2.8rem;
     }
@@ -256,71 +257,124 @@ a.effect-shine:hover {
 
 // See more button
 .underline {
-  position: relative; 
+  position: relative;
   text-decoration: none;
-    color: black;
-    outline: none
-}   
-.underline:hover{
+  color: black;
+  outline: none;
+}
+.underline:hover {
   text-decoration: none;
-    color: black;
-    outline: none
+  color: black;
+  outline: none;
 }
 .underline:after {
-   position: absolute;
-   content: '';
-   height: 2px;
- /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
-   bottom: -4px; 
-
+  position: absolute;
+  content: "";
+  height: 2px;
+  /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+  bottom: -4px;
 
   /****** 
   optional values below 
   ******/
-   
-   /* center - (optional) use with adjusting width   */
-   margin: 0 auto;
- left: 0;
-   right: 0;
- width: 50%;
- background: $black;
- 
- /* optional animation */
- -o-transition:.5s;
-   -ms-transition:.5s;
-   -moz-transition:.5s;
-   -webkit-transition:.5s;
-   transition:.5s;
-}
 
+  /* center - (optional) use with adjusting width   */
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 50%;
+  background: $black;
+
+  /* optional animation */
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
 
 /* optional hover classes used with anmiation */
 .underline:hover:after {
-  
- width: 90%;
- background: $black;
+  width: 90%;
+  background: $black;
 }
 
 // our services list
-.ser-mar-top{
-
+.ser-mar-top {
 }
 
-// .ser-row-1{
-//   margin-top: 0 !important;
-// }
-// .ser-row-2{
-//   margin-top: 0 !important;
-// }
-.recent-work{
+@media (max-width: 767px){
+  .ser-row-1 {
+    margin-top: 0 !important;
+  }
+  .ser-row-2 {
+    margin-top: 0 !important;
+  }
+}
+
+.recent-work {
   overflow: overlay;
 }
-.ser-title{
+.ser-title {
   font-size: 20px;
 }
-.service-list{
-    padding-left: 0;
-    list-style: none;
-    line-height: 34px;
-    font-size: 16px;
+.service-list {
+  padding-left: 0;
+  list-style: none;
+  line-height: 34px;
+  font-size: 16px;
+}
+
+
+// technology section
+.tab-view{
+
+}
+// Tab-view
+
+.toggle {
+}
+.toggle .tabs {
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  justify-content: flex-start
+}
+.toggle .tabs .tab {
+  float: left;
+  background: white;
+  color: $gray-off;
+  height: 31px;
+  margin: 2px 8px 0;
+  padding: 0 8px;
+  cursor: pointer;
+
+  width: auto;
+  white-space: nowrap;
+}
+.toggle .tabs .tab.active {
+  color: $black;
+  border-bottom: 2px solid $black;
+}
+.toggle .panels .panel {
+  padding: 20px 10px;
+  display: none;
+}
+.toggle .panels .panel:first-child {
+  display: block;
+}
+@media (min-width: 767px){
+  .toggle .tabs {
+    justify-content: center !important;
+  }
+}
+.tech-section-max-width{
+  max-width: 1140px;
 }
