@@ -11221,6 +11221,15 @@ a.effect-shine:hover {
   padding: 20px 9px;
 }
 
+.dis-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .mobile-header {
   background-color: #000;
   -webkit-box-shadow: 0px -5px 9px 1px #fff;
