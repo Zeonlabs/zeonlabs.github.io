@@ -11158,10 +11158,10 @@ a.effect-shine:hover {
 }
 
 .toggle .tabs {
-  border-bottom: 1px solid #eee;
   width: 100%;
   height: 36px;
   line-height: 36px;
+  border-bottom: 1px solid #eee;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
