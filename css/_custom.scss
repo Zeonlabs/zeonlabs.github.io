@@ -12,7 +12,7 @@ $gray-off: #979797;
 .bg-blue {
   background-color: $blue-t;
 }
-.bg-gray{
+.bg-gray {
   background-color: #f9f9f9;
 }
 .text-size-14 {
@@ -49,7 +49,7 @@ $gray-off: #979797;
 }
 
 // Header shine text effect
-.header-site{
+.header-site {
   z-index: 9999999;
   position: relative;
 }
@@ -225,7 +225,7 @@ a.effect-shine:hover {
 
 // black button
 
-.button-bw{
+.button-bw {
   color: $black;
   background-color: #f9f9f9;
   border: 1.5px solid $black;
@@ -364,7 +364,6 @@ a.effect-shine:hover {
 // Tab-view
 
 .toggle {
-
 }
 .toggle .tabs {
   width: 100%;
@@ -398,12 +397,10 @@ a.effect-shine:hover {
 .toggle .panels .panel {
   padding: 20px 10px;
   display: none;
-  
 }
 .toggle .panels .panel:first-child {
   display: flex;
   justify-content: space-around;
-
 }
 @media (min-width: 767px) {
   .toggle .tabs {
@@ -414,13 +411,19 @@ a.effect-shine:hover {
   max-width: 1140px;
 }
 
-.tab-content{
+.tab-content {
   padding: 20px 9px;
-  .sub-text{
+  .sub-text {
     font-size: 14px;
   }
 }
-.dis-flex{
+.dis-flex {
   display: flex;
   justify-content: center;
+}
+
+// clock
+
+.clock-sub-text {
+  color: $gray-off;
 }

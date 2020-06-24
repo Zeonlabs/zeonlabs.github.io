@@ -550,43 +550,52 @@
   ------------------------------------------------------------------------------------------------ -->
 
   <section id="#our_services" class="bg-black py-xl-12 py-md-8 py-7">
-    <div class="container mt-5 mb-5">
+    <div class="container ">
 
       <div class="row">
-        <div class="colxl-6 col-sm-12 mt-5">
-          
+        <div class="colxl-6 col-sm-6 mt-3">
+
           <div class="clock-display">
-              <div class="clock">
-
-                <div class="hour">
-                    <div class="hr" id="hr">
-
-                    </div>
-                </div>
-                <div class="min">
-                    <div class="mn" id="mn">
-
-                    </div>
-                </div>
-                <div class="sec">
-                    <div class="sc" id="sc">
-
-                    </div>
-                </div>
-
-
-              </div>            
+            <div class="clock">
+              <div class="hour">
+                <div class="hr" id="hr"></div>
+              </div>
+              <div class="min">
+                <div class="mn" id="mn"></div>
+              </div>
+              <div class="sec">
+                <div class="sc" id="sc"></div>
+              </div>
+            </div>
           </div>
-          <div class="text-center text-white">
+
+          <div class="text-center text-white mt-3">
             <h6>India</h6>
-            <p>215,Western plaza, Surat <br> 395010, Gujarat, India</p>
-            <p>+91 99 9999 9999</p>
+            <p class="clock-sub-text">215,Western plaza, Surat <br> 395010, Gujarat, India</p>
+            <p class="clock-sub-text">+91 99 9999 9999</p>
           </div>
         </div>
-        <div class="col-xl-6">
-          <!-- <div class="clock">
-
-          </div> -->
+        <div class="col-xl-6 col-sm-6 mt-3">
+         
+          <div class="clock-display">
+            <div class="clock">
+              <div class="hour">
+                <div class="hr" id="hr"></div>
+              </div>
+              <div class="min">
+                <div class="mn" id="mn"></div>
+              </div>
+              <div class="sec">
+                <div class="sc" id="sc"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="text-center text-white mt-3">
+            <h6>India</h6>
+            <p class="clock-sub-text">215,Western plaza, Surat <br> 395010, Gujarat, India</p>
+            <p class="clock-sub-text">+91 99 9999 9999</p>
+          </div>
         </div>
       </div>
 
@@ -601,63 +610,60 @@
 
   setInterval(() => {
 
-  let day = new Date();
-  let hh = day.getHours() * 30;
-  let mm = day.getMinutes() * deg;
-  let ss = day.getSeconds() * deg;
+    let day = new Date();
+    let hh = day.getHours() * 30;
+    let mm = day.getMinutes() * deg;
+    let ss = day.getSeconds() * deg;
 
-  hr.style.transform = `rotateZ(${(hh) + (mm/12)}deg)`;
-  mn.style.transform = `rotateZ(${(mm)}deg)`;
-  sc.style.transform = `rotateZ(${(ss)}deg)`;
+    hr.style.transform = `rotateZ(${(hh) + (mm / 12)}deg)`;
+    mn.style.transform = `rotateZ(${(mm)}deg)`;
+    sc.style.transform = `rotateZ(${(ss)}deg)`;
   })
-
-
-
 </script>
 
 <script>
-  (function () {
-    $(function () {
-      var toggle;
-      return toggle = new Toggle('.toggle');
-    });
+    (function () {
+      $(function () {
+        var toggle;
+        return toggle = new Toggle('.toggle');
+      });
 
-    this.Toggle = (function () {
-      Toggle.prototype.el = null;
+      this.Toggle = (function () {
+        Toggle.prototype.el = null;
 
-      Toggle.prototype.tabs = null;
+        Toggle.prototype.tabs = null;
 
-      Toggle.prototype.panels = null;
+        Toggle.prototype.panels = null;
 
-      function Toggle(toggleClass) {
-        this.el = $(toggleClass);
-        this.tabs = this.el.find(".tab");
-        this.panels = this.el.find(".panel");
-        this.bind();
-      }
+        function Toggle(toggleClass) {
+          this.el = $(toggleClass);
+          this.tabs = this.el.find(".tab");
+          this.panels = this.el.find(".panel");
+          this.bind();
+        }
 
-      Toggle.prototype.show = function (index) {
-        var activePanel, activeTab;
-        this.tabs.removeClass('active');
-        activeTab = this.tabs.get(index);
-        $(activeTab).addClass('active');
-        this.panels.hide();
-        activePanel = this.panels.get(index);
-        return $(activePanel).show();
-      };
+        Toggle.prototype.show = function (index) {
+          var activePanel, activeTab;
+          this.tabs.removeClass('active');
+          activeTab = this.tabs.get(index);
+          $(activeTab).addClass('active');
+          this.panels.hide();
+          activePanel = this.panels.get(index);
+          return $(activePanel).show();
+        };
 
-      Toggle.prototype.bind = function () {
-        var _this = this;
-        return this.tabs.unbind('click').bind('click', function (e) {
-          return _this.show($(e.currentTarget).index());
-        });
-      };
+        Toggle.prototype.bind = function () {
+          var _this = this;
+          return this.tabs.unbind('click').bind('click', function (e) {
+            return _this.show($(e.currentTarget).index());
+          });
+        };
 
-      return Toggle;
+        return Toggle;
 
-    })();
+      })();
 
-  }).call(this);
+    }).call(this);
 
 </script>
 
