@@ -49,7 +49,10 @@ $gray-off: #979797;
 }
 
 // Header shine text effect
-
+.header-site{
+  z-index: 9999999;
+  position: relative;
+}
 .effect-shine {
   color: $white;
 }
@@ -83,11 +86,13 @@ a.effect-shine:hover {
     mask-position: -50%;
   }
 }
+
 // Home
 
 .home {
   background-color: $black;
   height: 100vh;
+  min-height: 600px;
 }
 .button-view-work {
   margin-top: calc(100vh - 98vh);
@@ -232,7 +237,7 @@ a.effect-shine:hover {
 .button-bw:hover {
   color: $white;
   background-color: $black;
-  border: 1.5px solid $white;
+  border: 1.5px solid $black;
   font-size: 14px;
   outline: none;
 }

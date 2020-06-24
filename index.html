@@ -553,42 +553,67 @@
     <div class="container mt-5 mb-5">
 
       <div class="row">
-        <div class="col-xl-6">
-          <div class="clock ">
-            <div class="clock-wrapper ">
-              <div class="clock-base ">
-                <div class="clock-dial ">
-                  <div class="clock-indicator"></div>
-                  <div class="clock-indicator"></div>
-                  <div class="clock-indicator"></div>
-                  <div class="clock-indicator"></div>
-                  <div class="clock-indicator"></div>
-                  <div class="clock-indicator"></div>
-                  <div class="clock-indicator"></div>
-                  <div class="clock-indicator"></div>
-                  <div class="clock-indicator"></div>
-                  <div class="clock-indicator"></div>
-                  <div class="clock-indicator"></div>
-                  <div class="clock-indicator"></div>
+        <div class="colxl-6 col-sm-12 mt-5">
+          
+          <div class="clock-display">
+              <div class="clock">
+
+                <div class="hour">
+                    <div class="hr" id="hr">
+
+                    </div>
                 </div>
-                <div class="clock-hour"></div>
-                <div class="clock-minute"></div>
-                <div class="clock-second"></div>
-                <div class="clock-center"></div>
-              </div>
-            </div>
+                <div class="min">
+                    <div class="mn" id="mn">
+
+                    </div>
+                </div>
+                <div class="sec">
+                    <div class="sc" id="sc">
+
+                    </div>
+                </div>
+
+
+              </div>            
+          </div>
+          <div class="text-center text-white">
+            <h6>India</h6>
+            <p>215,Western plaza, Surat <br> 395010, Gujarat, India</p>
+            <p>+91 99 9999 9999</p>
           </div>
         </div>
         <div class="col-xl-6">
-          <div class="clock">
+          <!-- <div class="clock">
 
-          </div>
+          </div> -->
         </div>
       </div>
 
     </div>
   </section>
 </body>
+<script type="text/javascript">
+  const deg = 6;
+  const hr = document.querySelector('#hr');
+  const mn = document.querySelector('#mn');
+  const sc = document.querySelector('#sc');
+
+  setInterval(() => {
+
+  let day = new Date();
+  let hh = day.getHours() * 30;
+  let mm = day.getMinutes() * deg;
+  let ss = day.getSeconds() * deg;
+
+  hr.style.transform = `rotateZ(${(hh) + (mm/12)}deg)`;
+  mn.style.transform = `rotateZ(${(mm)}deg)`;
+  sc.style.transform = `rotateZ(${(ss)}deg)`;
+  })
+
+
+
+</script>
 
 <script>
   (function () {
