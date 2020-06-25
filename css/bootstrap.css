@@ -10843,7 +10843,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .color {
-  color: #c8c8c8 !important;
+  color: #000 !important;
 }
 
 .text-size-16 {
@@ -11284,7 +11284,7 @@ a.effect-shine:hover {
 }
 
 .footer-top-border {
-  border-top: 0.1px solid #343434;
+  border-top: 0.1px solid #d7d7d7;
 }
 
 .text-footer {
@@ -11301,6 +11301,101 @@ a.effect-shine:hover {
 
 .color-white {
   color: white;
+}
+
+li {
+  list-style: none;
+}
+
+.opacity-2 {
+  opacity: 0.19;
+}
+
+.footer-email {
+  text-decoration: none !important;
+  color: #000;
+  list-style: none;
+}
+
+@media (min-width: 1200px) {
+  .footer-email {
+    font-size: 7.5rem !important;
+  }
+}
+
+@media (min-width: 1000px) {
+  .footer-email {
+    font-size: 6.5rem !important;
+  }
+}
+
+@media (min-width: 900px) {
+  .footer-email {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-email {
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 574px) {
+  .footer-email {
+    font-size: 3.5rem;
+  }
+  .footer-email-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 574px) {
+  .footer-email {
+    font-size: 2.5rem;
+  }
+  .footer-email-title {
+    font-size: 1.5rem;
+  }
+  .social-icon-size {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer-email {
+    font-size: 3rem;
+  }
+  .footer-email-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .footer-email {
+    font-size: 2.3rem;
+  }
+  .footer-email-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .footer-email {
+    font-size: 2rem;
+  }
+  .footer-email-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer-email {
+    font-size: 1.6rem;
+  }
+  .footer-email-title {
+    font-size: 1rem;
+  }
 }
 
 .mobile-header {
