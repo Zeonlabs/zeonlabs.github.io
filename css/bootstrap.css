@@ -10853,6 +10853,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .nav-link {
   color: #fff;
+  text-decoration: none;
 }
 
 .nav-link :hover {
