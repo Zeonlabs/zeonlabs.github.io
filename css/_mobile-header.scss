@@ -40,8 +40,11 @@
     display: none;
   }
 }
-input {
-  display: none;
+// input {
+//   display: none;
+// }
+#menuToggle{
+  display: contents;
 }
 .open {
   background-color: #ffffff;

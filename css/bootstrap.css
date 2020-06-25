@@ -11437,8 +11437,8 @@ li {
   }
 }
 
-input {
-  display: none;
+#menuToggle {
+  display: contents;
 }
 
 .open {
