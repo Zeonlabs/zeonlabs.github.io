@@ -92,7 +92,8 @@
         "scss/_print.scss",
         "_custom.scss",
         "_mobile-header.scss",
-        "scss/_clock.scss"
+        "scss/_clock.scss",
+        "_contact-us.scss"
     ],
     "names": [],
     "file": "bootstrap.css"
