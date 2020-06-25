@@ -11834,4 +11834,79 @@ input {
   z-index: 12;
   border-radius: 6px 6px 0 0;
 }
+
+.display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 1300px) {
+  .mega-font {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  .mega-font {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .mega-font {
+    font-size: 3.5rem;
+    padding-top: 4.5vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .mega-font {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 583px) {
+  .mega-font {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 583px) {
+  .mega-font {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 492px) {
+  .mega-font {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 415px) {
+  .mega-font {
+    font-size: 2.5rem;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 360px) {
+  .mega-font {
+    font-size: 1.6rem;
+    line-height: 50px;
+  }
+  .sub-text {
+    font-size: 16px !important;
+    line-height: 20px !important;
+  }
+}
+
+.img-size {
+  width: 75px;
+}
+
+.color-gray-d2 {
+  color: #cccccc;
+}
 /*# sourceMappingURL=bootstrap.css.map */
