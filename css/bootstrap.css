@@ -15758,7 +15758,7 @@ em {
 .cb-checkbox_rounded-ripple {
   display: block;
   position: absolute;
-  top: 0;
+  top: 0.2px;
   left: 0;
   right: 0;
   bottom: 0;
