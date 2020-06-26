@@ -6,15 +6,15 @@ header {
   padding-left: 0px !important;
 }
 
-.contact{
-  a{
+.contact {
+  a {
     padding-left: 6px;
     margin-right: 12px;
     margin-bottom: 0px;
   }
-  .navbar-brand{
-         padding-top: 0px !important;
-         padding-bottom: 0px !important;
+  .navbar-brand {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
   }
 }
 
@@ -43,7 +43,7 @@ input {
 
 // hover label
 
-.ze-checkbox:hover{
+.ze-checkbox:hover {
   .ze-checkbox_rounded-box:before {
     border: 1px solid black !important;
   }
@@ -83,50 +83,9 @@ input {
   transition: background-color 0.2s ease-in, color 0.2s ease-in;
 }
 
-.email-hover:hover{
+.email-hover:hover {
   color: $white;
 }
-
-.ze-outro-social{
-  .effect-shine{
-    color : $gray !important;
-  }
-}
-
-// clock
-
-.clock-sub-text {
-  color: #9b9b9b;
-  line-height: 12px !important;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @-webkit-keyframes fadeOut {
   0% {
