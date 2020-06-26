@@ -133,6 +133,17 @@ input {
   transition: background-color 0.2s ease-in, color 0.2s ease-in;
 }
 
+.button-submit:active {
+  color: $white;
+  background-color: #000000;
+  // border: 1.5px solid #e3e3e3;
+  font-size: 14px;
+  outline: none;
+  padding: 18px 70px 16px 70px;
+  -webkit-transition: background-color 0.2s ease-in, color 0.2s ease-in;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+
 
 
 

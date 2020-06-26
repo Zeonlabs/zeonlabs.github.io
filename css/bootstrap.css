@@ -11980,6 +11980,16 @@ input {
   transition: background-color 0.2s ease-in, color 0.2s ease-in;
 }
 
+.button-submit:active {
+  color: #fff;
+  background-color: #000000;
+  font-size: 14px;
+  outline: none;
+  padding: 18px 70px 16px 70px;
+  -webkit-transition: background-color 0.2s ease-in, color 0.2s ease-in;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+
 @-webkit-keyframes fadeOut {
   0% {
     opacity: 1;
