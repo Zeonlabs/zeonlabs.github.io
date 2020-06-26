@@ -83,8 +83,15 @@ input {
   transition: background-color 0.2s ease-in, color 0.2s ease-in;
 }
 
+.email-hover:hover{
+  color: $white;
+}
 
-
+.ze-outro-social{
+  .effect-shine{
+    color : $gray !important;
+  }
+}
 
 
 

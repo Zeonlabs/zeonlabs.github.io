@@ -219,29 +219,11 @@
         </div>
     </div>
 
-    <!-- footer -->
+    <!-- clock -->
+    <section id="#our_services" class="bg-black py-xl-12 py-md-8 py-7">
+        <div class="container ">
 
-    <footer class="bg-black overflow-auto py-xl-10 py-md-8 py-sm-8">
-        <div class="container mt-5">
 
-            <div class="mt-5 ">
-                <ul class="font-cs-b  text-center p-0 mt-5 ">
-
-                    <div class="font-cs-b text-black mb-2 color-white ">
-                        <h2 class="footer-email-title">Have a project for us?</h2>
-                    </div>
-
-                    <li class="font-cs-b text-black mt-3">
-                        <a id="" class="footer-email" href="">
-                            <h1 class="footer-email mega-font color-white">info@zeonlabs.co</h1>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-            
-            <!-- clock -->
-           
             <div class="row">
                 <div class="colxl-6 col-sm-6 mt-3 mb-3">
 
@@ -262,7 +244,7 @@
                     <div class="text-center text-white mt-3">
                         <h5>India</h5>
                         <p class="clock-sub-text mb-2">215,Western plaza, Surat <br> 395010, Gujarat, India</p>
-                        <p class="clock-sub-text">+91 80 9727 9994</p>
+                        <!-- <p class="clock-sub-text">+91 80 9727 9994</p> -->
                     </div>
                 </div>
                 <div class="col-xl-6 col-sm-6 mt-3 mb-3 ">
@@ -284,10 +266,77 @@
                     <div class="text-center text-white mt-3">
                         <h5>Australia</h5>
                         <p class="clock-sub-text mb-2">Parramatta NSW 2150 <br> Sydney, Australia</p>
-                        <p class="clock-sub-text">+91 61 413 241 384</p>
+                        <!-- <p class="clock-sub-text">+91 61 413 241 384</p> -->
                     </div>
                 </div>
             </div>
+
+
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="bg-black overflow-auto py-xl-10 py-md-8 py-sm-8 footer-top-border">
+        <div class="container mt-1">
+
+
+            <div class="mt-5">
+                <div class="ze-outro-footer">
+                    <div class="ze-outro-container">
+                        <div class="ze-outro-grid">
+                            <div class="ze-outro-grid-col -left">
+
+                                <div class="ze-outro-mail mb-5">
+                                    <img src="./Images/zeonlabs_logo.svg" alt="zeonlabs" class=" img-fluid logo-header mb-2"
+                                        style="width: 152px;">
+                                </div>
+
+                                <div class="ze-outro-mail color-gray  email-hover">
+                                    <a href=""><em>
+                                            <span class="font-cs-n" data-text="">info@zeonlabs.co</span></em>
+                                    </a>
+                                </div>
+                                <address class="ze-outro-address ">
+                                    <p class="color-gray font-cs-n email-hover">901 N Pitt Str., Suite 170</p>
+                                    <p class="color-gray font-cs-n email-hover">Alexandria, VA 22314, USA</p>
+                                    <p class="color-gray font-cs-n email-hover">Alexandria, VA 22314, USA</p>
+                                </address>
+                            </div>
+                            
+                            <div class="ze-outro-grid-col -right">
+                                <div class="ze-outro-social ">
+                                    <a class="font-cs-n effect-shine ze-outro-social-item -left" href="" target="_blank" rel="noopener">
+                                        <span class="color-gray" data-text="Facebook">Home</span>
+                                    </a>
+
+                                    <a class="font-cs-n effect-shine ze-outro-social-item" href="" target="_blank" rel="noopener">
+                                        <span class="color-gray" data-text="Patreon">Work</span>
+                                    </a>
+
+                                    <a class="font-cs-n effect-shine ze-outro-social-item" href="" target="_blank" rel="noopener">
+                                        <span class="color-gray" data-text="Behance">Services</span>
+                                    </a>
+
+                                    <a class="font-cs-n effect-shine ze-outro-social-item" href="" target="_blank" rel="noopener">
+                                        <span class="color-gray" data-text="Dribbble">Technology</span>
+                                    </a>
+
+                                    <a class="font-cs-n effect-shine ze-outro-social-item " href="" target="_blank" rel="noopener">
+                                        <span class="color-gray" data-text="Instagram">About</span>
+                                    </a>
+
+                                    <a class="font-cs-n effect-shine ze-outro-social-item" href="" target="_blank" rel="noopener">
+                                        <span class="color-gray" data-text="YouTube">Contact us</span>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <!-- <div class="logo text-center mb-4 opacity-2">
@@ -296,15 +345,9 @@
 
     </footer>
 
-    
 
-    <!-- <section id="#our_services" class="bg-black py-xl-12 py-md-8 py-7">
-        <div class="container ">
 
-            
 
-        </div>
-    </section> -->
 
     <!-- social media icons -->
     <section class="py-4 social-footer-icon bg-black footer-top-border">
@@ -347,19 +390,19 @@
     const hr = document.querySelector('#hr');
     const mn = document.querySelector('#mn');
     const sc = document.querySelector('#sc');
-  
+
     setInterval(() => {
-  
-      let day = new Date();
-      let hh = day.getHours() * 30;
-      let mm = day.getMinutes() * deg;
-      let ss = day.getSeconds() * deg;
-  
-      hr.style.transform = `rotateZ(${(hh) + (mm / 12)}deg)`;
-      mn.style.transform = `rotateZ(${(mm)}deg)`;
-      sc.style.transform = `rotateZ(${(ss)}deg)`;
+
+        let day = new Date();
+        let hh = day.getHours() * 30;
+        let mm = day.getMinutes() * deg;
+        let ss = day.getSeconds() * deg;
+
+        hr.style.transform = `rotateZ(${(hh) + (mm / 12)}deg)`;
+        mn.style.transform = `rotateZ(${(mm)}deg)`;
+        sc.style.transform = `rotateZ(${(ss)}deg)`;
     })
-  </script>
-  
+</script>
+
 
 </html>

@@ -11923,6 +11923,10 @@ input {
   transition: background-color 0.2s ease-in, color 0.2s ease-in;
 }
 
+.email-hover:hover {
+  color: #fff;
+}
+
 @-webkit-keyframes fadeOut {
   0% {
     opacity: 1;
