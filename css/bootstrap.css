@@ -11286,7 +11286,7 @@ a.effect-shine:hover {
 }
 
 .footer-top-border {
-  border-top: 0.1px solid #e3e3e3;
+  border-top: 0.1px solid #2e2e2e;
 }
 
 .text-footer {
@@ -11315,7 +11315,6 @@ li {
 
 .footer-email {
   text-decoration: none !important;
-  color: #000;
   list-style: none;
 }
 
@@ -14333,7 +14332,7 @@ em {
   width: 300%;
   -webkit-transform: translateX(-66.66%);
   transform: translateX(-66.66%);
-  opacity: 0.1;
+  opacity: 0.3;
   background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDYwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIGQ9Ik0wLDU2LjVjMCwwLDI5OC42NjYsMCwzOTkuMzMzLDBDNDQ4LjMzNiw1Ni41LDUxMy45OTQsNDYsNTk3LDQ2Yzc3LjMyNywwLDEzNSwxMC41LDIwMC45OTksMTAuNWM5NS45OTYsMCw0MDIuMDAxLDAsNDAyLjAwMSwwIj48L3BhdGg+PC9zdmc+);
   background-position: center bottom;
   pointer-events: none;

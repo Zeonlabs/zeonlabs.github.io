@@ -441,7 +441,7 @@ a.effect-shine:hover {
 // footer
 
 .footer-top-border{
-  border-top: 0.1px solid #e3e3e3;
+  border-top: 0.1px solid #2e2e2e;
 }
 
 .text-footer{
@@ -468,7 +468,7 @@ li{
 .footer-email{
   
   text-decoration: none !important;
-  color: $black;
+  // color: $black;
   list-style: none;
 }
 @media (min-width: 1200px) {
