@@ -11863,73 +11863,6 @@ header {
   padding-bottom: 0px !important;
 }
 
-@media (min-width: 1300px) {
-  .mega-font {
-    font-size: 6rem;
-  }
-}
-
-@media (max-width: 1199px) {
-  .mega-font {
-    font-size: 4rem;
-  }
-}
-
-@media (min-width: 1199px) {
-  .mega-font {
-    font-size: 4rem;
-  }
-}
-
-@media (max-width: 991px) {
-  .mega-font {
-    font-size: 3.5rem;
-    padding-top: 4.5vh;
-  }
-}
-
-@media (max-width: 767px) {
-  .mega-font {
-    font-size: 2.8rem;
-  }
-}
-
-@media (max-width: 583px) {
-  .mega-font {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 583px) {
-  .mega-font {
-    font-size: 2.4rem;
-  }
-}
-
-@media (max-width: 492px) {
-  .mega-font {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 415px) {
-  .mega-font {
-    font-size: 2.5rem;
-    line-height: 50px;
-  }
-}
-
-@media (max-width: 360px) {
-  .mega-font {
-    font-size: 1.6rem;
-    line-height: 50px;
-  }
-  .sub-text {
-    font-size: 16px !important;
-    line-height: 20px !important;
-  }
-}
-
 .img-size {
   width: 55px;
 }
@@ -11955,14 +11888,14 @@ input {
   padding: 16px 16px 16px 17px;
 }
 
-.ze-checkbox-group .ze-checkbox:hover .ze-checkbox_rounded-box:before {
+.ze-checkbox:hover .ze-checkbox_rounded-box:before {
   border: 1px solid black !important;
 }
 
 .button-submit {
   color: #fff;
   background-color: #000000;
-  border: 0px solid #000;
+  border: 1.5px solid #000000;
   font-size: 14px;
   outline: none;
   padding: 18px 70px 16px 70px;
@@ -11972,7 +11905,8 @@ input {
 
 .button-submit:hover {
   color: #000;
-  background-color: #e3e3e3;
+  background-color: #ffffff;
+  border: 1.5px solid #8d8d8d;
   font-size: 14px;
   outline: none;
   padding: 18px 70px 16px 70px;
