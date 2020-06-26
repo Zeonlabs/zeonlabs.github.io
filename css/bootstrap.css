@@ -11843,6 +11843,22 @@ li {
   display: flex;
 }
 
+header {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+.contact a {
+  padding-left: 6px;
+  margin-right: 12px;
+  margin-bottom: 0px;
+}
+
+.contact .navbar-brand {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
 @media (min-width: 1300px) {
   .mega-font {
     font-size: 6rem;
@@ -11920,6 +11936,19 @@ li {
 
 input {
   display: block;
+}
+
+.close-button {
+  display: inline-block;
+  font-size: 1.25rem;
+}
+
+.display-contents {
+  display: contents;
+}
+
+.nav-padding {
+  padding: 16px 16px 16px 17px;
 }
 
 @-webkit-keyframes fadeOut {
