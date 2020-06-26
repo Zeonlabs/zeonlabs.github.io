@@ -144,7 +144,7 @@
 .menu ul li {
   width: fit-content;
 }
-.cb-menu-title {
+.ze-menu-title {
   color: $gray-500;
   font-size: 16px;
   line-height: 100%;
@@ -157,7 +157,7 @@
   transition: color 0.2s;
   text-align: left;
 }
-.cb-menu-nav-item.-marked a:before {
+.ze-menu-nav-item.-marked a:before {
   transform: scaleY(1);
   -webkit-transform-origin: left;
   transform-origin: left;
@@ -166,7 +166,7 @@
 #email {
   margin-top: -30px !important;
 }
-.cb-menu-mail {
+.ze-menu-mail {
   position: fixed;
   bottom: 15px;
 }
@@ -174,20 +174,20 @@
   .menu .menuContent {
     font-size: 38px;
   }
-  .cb-menu-nav-item.-marked a:before {
+  .ze-menu-nav-item.-marked a:before {
     width: 218px;
   }
-  //   .cb-menu-mail {
+  //   .ze-menu-mail {
   //     position: fixed;
   //     bottom: 15px;
   //   }
-  .cb-menu-mail #email {
+  .ze-menu-mail #email {
     margin-top: -22px !important;
   }
 }
 
-.cb-menu-mail a:after,
-.cb-menu-mail a:before {
+.ze-menu-mail a:after,
+.ze-menu-mail a:before {
   content: "";
   display: block;
   position: absolute;
@@ -201,7 +201,7 @@
 .f-20 {
   font-size: 20px;
 }
-.cb-menu-nav-item a:before {
+.ze-menu-nav-item a:before {
   content: "";
   position: absolute;
   left: 0;
