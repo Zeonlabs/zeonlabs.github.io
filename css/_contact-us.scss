@@ -110,6 +110,29 @@ input {
   }
 }
 
+// submit button
+
+.button-submit {
+  color: #fff;
+  background-color: #000000;
+  border: 0px solid #000;
+  font-size: 14px;
+  outline: none;
+  padding: 18px 70px 16px 70px;
+  -webkit-transition: background-color 0.2s ease-in, color 0.2s ease-in;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+.button-submit:hover {
+  color: $black;
+  background-color: #e3e3e3;
+  // border: 1.5px solid #e3e3e3;
+  font-size: 14px;
+  outline: none;
+  padding: 18px 70px 16px 70px;
+  -webkit-transition: background-color 0.2s ease-in, color 0.2s ease-in;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+
 
 
 
