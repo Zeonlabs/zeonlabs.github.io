@@ -87,20 +87,6 @@ input {
   color: $white;
 }
 
-// footer
-@media (min-width : 991px){
-  .footer-top-border{
-    border-top: 0.1px solid #222222;
-    // border-top: 0.1px solid #121212;
-  }
-}
-@media (max-width : 991px){
-  .footer-top-border{
-    // border-top: 0.1px solid #222222;
-    border-top: 0.1px solid #121212;
-  }
-}
-
 
 
 
