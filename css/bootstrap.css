@@ -10844,7 +10844,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .bg-vaartani {
-  background-color: #ebf5ff;
+  background-color: #145c9e;
 }
 
 .color {
@@ -11444,6 +11444,14 @@ li {
   50% {
     opacity: 1;
   }
+}
+
+.width-20 {
+  width: 20% !important;
+}
+
+.border-r-10 {
+  border-radius: 8px;
 }
 
 .mobile-header {
