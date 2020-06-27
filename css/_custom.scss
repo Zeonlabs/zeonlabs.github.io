@@ -15,10 +15,13 @@ $gray-off: #979797;
 .bg-gray {
   background-color: #f9f9f9;
 }
-.bg-black-900{
+.bg-black-900 {
   background-color: #111111;
 }
-.color{
+.bg-vaartani{
+  background-color: #105288;
+}
+.color {
   color: $black !important;
   // color: #c8c8c8 !important;
 }
@@ -437,23 +440,21 @@ a.effect-shine:hover {
   line-height: 22px;
 }
 
-
 // footer
-@media (min-width : 991px){
-  
-  .footer-top-border{
+@media (min-width: 991px) {
+  .footer-top-border {
     // border-top: 0.1px solid #222222;
     border-top: 0.1px solid #181818;
   }
 }
-@media (max-width : 991px){
-  .footer-top-border{
+@media (max-width: 991px) {
+  .footer-top-border {
     border-top: 0.1px solid #2c2c2c;
     // border-top: 0.1px solid #121212;
   }
 }
 
-.text-footer{
+.text-footer {
   color: #bfbfbf !important;
 }
 .font-ex-small {
@@ -463,92 +464,159 @@ a.effect-shine:hover {
 .lt-spacing-50 {
   letter-spacing: 0.05em;
 }
-.color-white{
+.color-white {
   color: white;
 }
-li{
+li {
   list-style: none;
 }
 
-.opacity-2{
+.opacity-2 {
   opacity: 0.19;
 }
 
-.footer-email{
-  
+.footer-email {
   text-decoration: none !important;
   // color: $black;
   list-style: none;
 }
 @media (min-width: 1200px) {
-    .footer-email {
-      font-size: 7.5rem !important;
-    }
+  .footer-email {
+    font-size: 7.5rem !important;
   }
-@media(min-width: 1000px) {
-  .footer-email{
+}
+@media (min-width: 1000px) {
+  .footer-email {
     font-size: 6.5rem !important;
   }
-}  
-@media(min-width: 900px) {
-  .footer-email{
+}
+@media (min-width: 900px) {
+  .footer-email {
     font-size: 5rem;
   }
-}  
-@media(min-width: 768px) {
-  .footer-email{
+}
+@media (min-width: 768px) {
+  .footer-email {
     font-size: 4.5rem;
   }
-}  
-@media(min-width: 574px) {
-  .footer-email{
+}
+@media (min-width: 574px) {
+  .footer-email {
     font-size: 3.5rem;
   }
-  .footer-email-title{
+  .footer-email-title {
     font-size: 1.5rem;
   }
-  
-}  
-@media(max-width: 574px) {
-  .footer-email{
+}
+@media (max-width: 574px) {
+  .footer-email {
     font-size: 2.5rem;
   }
-  .footer-email-title{
+  .footer-email-title {
     font-size: 1.5rem;
   }
-  .social-icon-size{
+  .social-icon-size {
     font-size: 1.5rem !important;
   }
-}  
-@media(max-width: 575px) {
-  .footer-email{
+}
+@media (max-width: 575px) {
+  .footer-email {
     font-size: 3rem;
   }
-  .footer-email-title{
+  .footer-email-title {
     font-size: 1.5rem;
   }
-}  
-@media(max-width: 440px) {
-  .footer-email{
+}
+@media (max-width: 440px) {
+  .footer-email {
     font-size: 2.3rem;
   }
-  .footer-email-title{
+  .footer-email-title {
     font-size: 1.2rem;
   }
-}  
-@media(max-width: 360px) {
-  .footer-email{
+}
+@media (max-width: 360px) {
+  .footer-email {
     font-size: 2rem;
   }
-  .footer-email-title{
+  .footer-email-title {
     font-size: 1rem;
   }
-}  
-@media(max-width: 320px) {
-  .footer-email{
+}
+@media (max-width: 320px) {
+  .footer-email {
     font-size: 1.6rem;
   }
-  .footer-email-title{
+  .footer-email-title {
     font-size: 1rem;
   }
-}  
+}
+
+// dot blink effect
+
+.blinking {
+  -webkit-animation: 2s blink ease infinite;
+  -moz-animation: 1s blink ease infinite;
+  -ms-animation: 1s blink ease infinite;
+  -o-animation: 1s blink ease infinite;
+  animation: 1.15s blink ease infinite;
+
+  overflow: hidden;
+    position: absolute;
+    top: 30%;
+    left: -12%;
+    border-radius: 50%;
+}
+.contact-blink{
+  position: relative;
+}
+
+@keyframes blink {
+  from,
+  to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  from,
+  to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blink {
+  from,
+  to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes blink{
+  from,
+  to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes blink{
+  from,
+  to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}

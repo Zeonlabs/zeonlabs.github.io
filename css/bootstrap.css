@@ -10843,6 +10843,10 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: #111111;
 }
 
+.bg-vaartani {
+  background-color: #105288;
+}
+
 .color {
   color: #000 !important;
 }
@@ -11405,6 +11409,40 @@ li {
   }
   .footer-email-title {
     font-size: 1rem;
+  }
+}
+
+.blinking {
+  -webkit-animation: 2s blink ease infinite;
+  animation: 1.15s blink ease infinite;
+  overflow: hidden;
+  position: absolute;
+  top: 30%;
+  left: -12%;
+  border-radius: 50%;
+}
+
+.contact-blink {
+  position: relative;
+}
+
+@keyframes blink {
+  from,
+  to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blink {
+  from,
+  to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
 }
 
