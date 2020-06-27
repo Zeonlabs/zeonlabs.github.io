@@ -11286,13 +11286,15 @@ a.effect-shine:hover {
   line-height: 22px;
 }
 
-.footer-top-border {
-  border-top: 0.1px solid #121212;
-}
-
-@media (max-width: 991) {
+@media (min-width: 991px) {
   .footer-top-border {
     border-top: 0.1px solid #222222;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer-top-border {
+    border-top: 0.1px solid #121212;
   }
 }
 
@@ -11932,6 +11934,18 @@ input {
 
 .email-hover:hover {
   color: #fff;
+}
+
+@media (min-width: 991px) {
+  .footer-top-border {
+    border-top: 0.1px solid #222222;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer-top-border {
+    border-top: 0.1px solid #121212;
+  }
 }
 
 @-webkit-keyframes fadeOut {
