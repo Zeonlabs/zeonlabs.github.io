@@ -18,7 +18,7 @@ $gray-off: #979797;
 .bg-black-900 {
   background-color: #111111;
 }
-.bg-vaartani{
+.bg-vaartani {
   background-color: #145c9e;
 }
 .color {
@@ -562,12 +562,12 @@ li {
   animation: 1.15s blink ease infinite;
 
   overflow: hidden;
-    position: absolute;
-    top: 30%;
-    left: -12%;
-    border-radius: 50%;
+  position: absolute;
+  top: 30%;
+  left: -12%;
+  border-radius: 50%;
 }
-.contact-blink{
+.contact-blink {
   position: relative;
 }
 
@@ -601,7 +601,7 @@ li {
   }
 }
 
-@-ms-keyframes blink{
+@-ms-keyframes blink {
   from,
   to {
     opacity: 0;
@@ -611,7 +611,7 @@ li {
   }
 }
 
-@-o-keyframes blink{
+@-o-keyframes blink {
   from,
   to {
     opacity: 0;
@@ -621,15 +621,51 @@ li {
   }
 }
 
+// Recent work
 
-
-
-// Recent work 
-
-.width-20{
+.width-20 {
   width: 20% !important;
 }
 
-.border-r-10{
+.border-r-10 {
   border-radius: 8px;
+}
+
+// display block for mobile view
+
+@media (min-width: 992px) {
+  .d-md-block {
+    display: block !important;
+  }
+}
+
+@media (max-width: 538px) {
+  // mobile view only
+  .font-size-small {
+    font-size: 22px;
+  }
+  .font-ex-small {
+    // font-size: 14px;
+  }
+}
+@media (max-width: 409px) {
+  // mobile view only
+  .font-size-small {
+    font-size: 20px;
+  }
+  .font-ex-small {
+    // font-size: 14px;
+  }
+}
+@media (max-width: 374px) {
+  .p-5 {
+    padding: 2rem !important;
+  }
+  // mobile view only
+  .font-size-small {
+    font-size: 16px;
+  }
+  .font-ex-small {
+    // font-size: 14px;
+  }
 }
