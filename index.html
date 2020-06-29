@@ -88,10 +88,10 @@
             <div class="menuContent container">
               <ul class="font-cs-b">
                 <div class="ze-menu-title font-cs-n mb-3">Menu</div>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#our_services">Services</a></li>
-                <li><a href="#technologies">Technology</a></li>
+                <li><a onclick="funCheckbox()" href="#home">Home</a></li>
+                <li><a onclick="funCheckbox()" href="#work">Work</a></li>
+                <li><a onclick="funCheckbox()" href="#our_services">Services</a></li>
+                <li><a onclick="funCheckbox()" href="#technologies">Technology</a></li>
                 <li class="ze-menu-nav-item -marked"><a href="./contact.html">Contact Us</a></li>
               </ul>
               <ul class="font-cs-b ze-menu-mail">
@@ -359,13 +359,13 @@
   ------------------------------------------------------------------------------------------------ -->
 
   <section id="our_services" class="recent-work bg-black py-xl-10 py-md-8 py-7 mt-3">
-    <div class="container mt-4 mb-5 ser-mar-top">
+    <div class="container mt-4 mb-5 ser-mar-top ">
       <div>
-        <h2 class="font-cs-b text-white text-center pb-2 mt-">Our Services</h2>
+        <h2 class="font-cs-b text-white text-center pb-2 ">Our Services</h2>
       </div>
 
-      <div class="mt-4">
-        <div class="row ser-row-1 mt-5">
+      <div class="mt-5 pb-2 pt-0">
+        <div class="row ser-row-1 mt-5 pt-1">
           <div class="services col-xl-3 col-md-3 col-sm-6">
             <h5 class="text-white font-cs-r ser-title">Research</h5>
             <ul class="color-gray font-cs-n service-list">
@@ -403,7 +403,7 @@
           </div>
         </div>
 
-        <div class="row ser-row-2 mt-5">
+        <div class="row ser-row-2 mt-5 pt-1">
           <div class="services col-xl-3 col-md-3 col-sm-6">
             <h5 class="text-white font-cs-r ser-title">Web app design</h5>
             <ul class="color-gray font-cs-n service-list">
@@ -831,7 +831,15 @@
   </section>
 
 
-</body> 
+</body>
+
+<script>
+  
+
+  function funCheckbox() {
+  document.getElementById("menuToggle").value = $("#menuToggle").prop("checked", false);
+}
+</script>
 
 <script>
   $(document).ready(function () {
