@@ -61,6 +61,11 @@ $gray-off: #979797;
   font-weight: 900;
   font-style: normal;
 }
+.font-light{
+  font-family: 'Lato', sans-serif;
+  // font-weight: 300;
+  // font-style: bold;
+}
 
 // Header shine text effect
 .header-site {
@@ -306,7 +311,7 @@ a.effect-shine:hover {
 .underline {
   position: relative;
   text-decoration: none;
-  color: black;
+  color: #979797;
   outline: none;
 }
 .underline:hover {
@@ -317,7 +322,7 @@ a.effect-shine:hover {
 .underline:after {
   position: absolute;
   content: "";
-  height: 2px;
+  height: 0.8px;
   /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
   bottom: -4px;
 
@@ -330,7 +335,7 @@ a.effect-shine:hover {
   left: 0;
   right: 0;
   width: 50%;
-  background: $black;
+  background: #979797;
 
   /* optional animation */
   -o-transition: 0.5s;
@@ -631,7 +636,7 @@ li {
 }
 
 .border-r-10 {
-  border-radius: 8px;
+  border-radius: 2px;
 }
 
 // display block for mobile view
@@ -707,4 +712,35 @@ li {
   .block-md-dis-none {
     display: none !important;
   }
+}
+
+
+// hover work block
+
+.work-block-effect {
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-shadow: 0 0 1px 0 rgba(0,0,0,.1), 0 3px 6px 0 rgba(0,0,0,.05);
+  transition: all .5s cubic-bezier(.215,.61,.355,1);
+}
+
+.work-block-effect:hover {
+  box-shadow: 0 0 1px 0 transparent, 0 3px 6px 0 transparent;
+  // -webkit-filter: brightness(110%);
+  // // filter: brightness(110%);
+  // -webkit-transform: scale(.99);
+  // -ms-transform: scale(.99);
+  transform: scale(.99);
+}
+
+// for more work 
+#for-more {
+  display: none;
 }
