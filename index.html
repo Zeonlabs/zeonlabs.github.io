@@ -46,7 +46,8 @@
                   <a href="#our_services" class="effect-shine nav-link text-size-16" aria-label="Services">Services</a>
                 </li>
                 <li class="nav-item nav-item-web">
-                  <a href="#technologies" class="effect-shine nav-link text-size-16" aria-label="Technology">Technology</a>
+                  <a href="#technologies" class="effect-shine nav-link text-size-16"
+                    aria-label="Technology">Technology</a>
                 </li>
                 <li class="nav-item nav-item-web">
                   <a href="./contact.html" class="effect-shine nav-link text-size-16" aria-label="Contact Us">Contact
@@ -824,21 +825,19 @@
       </div>
     </div>
   </section>
+
   <section class=" social-footer-icon bg-black footer-top-border">
     <div class="container text-center">
       <p class="py-2 m-0 color-gray"> © 2020 zeonlabs.co All rights reserved.</p>
     </div>
   </section>
 
-
 </body>
 
 <script>
-  
-
   function funCheckbox() {
-  document.getElementById("menuToggle").value = $("#menuToggle").prop("checked", false);
-}
+    document.getElementById("menuToggle").value = $("#menuToggle").prop("checked", false);
+  }
 </script>
 
 <script>
@@ -882,103 +881,103 @@
           }
         }
       });
-  });
-  
+    });
+
 </script>
 
 <script>
-    function myFunction() {
-      document.getElementById("for-more").style.display = "block";
-      document.getElementById("dispaly-n-for-more").style.display = "none";
-    }
+  function myFunction() {
+    document.getElementById("for-more").style.display = "block";
+    document.getElementById("dispaly-n-for-more").style.display = "none";
+  }
 </script>
 
 <script type="text/javascript">
-    const deg = 6;
-    const hr = document.querySelector('#hr');
-    const mn = document.querySelector('#mn');
-    const sc = document.querySelector('#sc');
+  const deg = 6;
+  const hr = document.querySelector('#hr');
+  const mn = document.querySelector('#mn');
+  const sc = document.querySelector('#sc');
 
-    setInterval(() => {
+  setInterval(() => {
 
-      let day = new Date();
-      let hh = day.getHours() * 30;
-      let mm = day.getMinutes() * deg;
-      let ss = day.getSeconds() * deg;
+    let day = new Date();
+    let hh = day.getHours() * 30;
+    let mm = day.getMinutes() * deg;
+    let ss = day.getSeconds() * deg;
 
-      hr.style.transform = `rotateZ(${(hh) + (mm / 12)}deg)`;
-      mn.style.transform = `rotateZ(${(mm)}deg)`;
-      sc.style.transform = `rotateZ(${(ss)}deg)`;
-    })
+    hr.style.transform = `rotateZ(${(hh) + (mm / 12)}deg)`;
+    mn.style.transform = `rotateZ(${(mm)}deg)`;
+    sc.style.transform = `rotateZ(${(ss)}deg)`;
+  })
 </script>
 
 <script>
-      (function () {
-        $(function () {
-          var toggle;
-          return toggle = new Toggle('.toggle');
-        });
-
-        this.Toggle = (function () {
-          Toggle.prototype.el = null;
-
-          Toggle.prototype.tabs = null;
-
-          Toggle.prototype.panels = null;
-
-          function Toggle(toggleClass) {
-            this.el = $(toggleClass);
-            this.tabs = this.el.find(".tab");
-            this.panels = this.el.find(".panel");
-            this.bind();
-          }
-
-          Toggle.prototype.show = function (index) {
-            var activePanel, activeTab;
-            this.tabs.removeClass('active');
-            activeTab = this.tabs.get(index);
-            $(activeTab).addClass('active');
-            this.panels.hide();
-            activePanel = this.panels.get(index);
-            return $(activePanel).show();
-          };
-
-          Toggle.prototype.bind = function () {
-            var _this = this;
-            return this.tabs.unbind('click').bind('click', function (e) {
-              return _this.show($(e.currentTarget).index());
-            });
-          };
-
-          return Toggle;
-
-        })();
-
-      }).call(this);
-
-</script>
-
-<script>
-    // clock
     (function () {
+      $(function () {
+        var toggle;
+        return toggle = new Toggle('.toggle');
+      });
 
-      //generate clock animations
-      var now = new Date(),
-        hourDeg = now.getHours() / 12 * 360 + now.getMinutes() / 60 * 30,
-        minuteDeg = now.getMinutes() / 60 * 360 + now.getSeconds() / 60 * 6,
-        secondDeg = now.getSeconds() / 60 * 360,
-        stylesDeg = [
-          "@-webkit-keyframes rotate-hour{from{transform:rotate(" + hourDeg + "deg);}to{transform:rotate(" + (hourDeg + 360) + "deg);}}",
-          "@-webkit-keyframes rotate-minute{from{transform:rotate(" + minuteDeg + "deg);}to{transform:rotate(" + (minuteDeg + 360) + "deg);}}",
-          "@-webkit-keyframes rotate-second{from{transform:rotate(" + secondDeg + "deg);}to{transform:rotate(" + (secondDeg + 360) + "deg);}}",
-          "@-moz-keyframes rotate-hour{from{transform:rotate(" + hourDeg + "deg);}to{transform:rotate(" + (hourDeg + 360) + "deg);}}",
-          "@-moz-keyframes rotate-minute{from{transform:rotate(" + minuteDeg + "deg);}to{transform:rotate(" + (minuteDeg + 360) + "deg);}}",
-          "@-moz-keyframes rotate-second{from{transform:rotate(" + secondDeg + "deg);}to{transform:rotate(" + (secondDeg + 360) + "deg);}}"
-        ].join("");
+      this.Toggle = (function () {
+        Toggle.prototype.el = null;
 
-      document.getElementById("clock-animations").innerHTML = stylesDeg;
+        Toggle.prototype.tabs = null;
 
-    })();
+        Toggle.prototype.panels = null;
+
+        function Toggle(toggleClass) {
+          this.el = $(toggleClass);
+          this.tabs = this.el.find(".tab");
+          this.panels = this.el.find(".panel");
+          this.bind();
+        }
+
+        Toggle.prototype.show = function (index) {
+          var activePanel, activeTab;
+          this.tabs.removeClass('active');
+          activeTab = this.tabs.get(index);
+          $(activeTab).addClass('active');
+          this.panels.hide();
+          activePanel = this.panels.get(index);
+          return $(activePanel).show();
+        };
+
+        Toggle.prototype.bind = function () {
+          var _this = this;
+          return this.tabs.unbind('click').bind('click', function (e) {
+            return _this.show($(e.currentTarget).index());
+          });
+        };
+
+        return Toggle;
+
+      })();
+
+    }).call(this);
+
+</script>
+
+<script>
+  // clock
+  (function () {
+
+    //generate clock animations
+    var now = new Date(),
+      hourDeg = now.getHours() / 12 * 360 + now.getMinutes() / 60 * 30,
+      minuteDeg = now.getMinutes() / 60 * 360 + now.getSeconds() / 60 * 6,
+      secondDeg = now.getSeconds() / 60 * 360,
+      stylesDeg = [
+        "@-webkit-keyframes rotate-hour{from{transform:rotate(" + hourDeg + "deg);}to{transform:rotate(" + (hourDeg + 360) + "deg);}}",
+        "@-webkit-keyframes rotate-minute{from{transform:rotate(" + minuteDeg + "deg);}to{transform:rotate(" + (minuteDeg + 360) + "deg);}}",
+        "@-webkit-keyframes rotate-second{from{transform:rotate(" + secondDeg + "deg);}to{transform:rotate(" + (secondDeg + 360) + "deg);}}",
+        "@-moz-keyframes rotate-hour{from{transform:rotate(" + hourDeg + "deg);}to{transform:rotate(" + (hourDeg + 360) + "deg);}}",
+        "@-moz-keyframes rotate-minute{from{transform:rotate(" + minuteDeg + "deg);}to{transform:rotate(" + (minuteDeg + 360) + "deg);}}",
+        "@-moz-keyframes rotate-second{from{transform:rotate(" + secondDeg + "deg);}to{transform:rotate(" + (secondDeg + 360) + "deg);}}"
+      ].join("");
+
+    document.getElementById("clock-animations").innerHTML = stylesDeg;
+
+  })();
 </script>
 
 </html>
