@@ -10905,6 +10905,10 @@ a.text-dark:hover, a.text-dark:focus {
   color: #fff;
 }
 
+.effect-shine:focus {
+  color: #fff;
+}
+
 .wrapper {
   display: block;
   position: absolute;
@@ -11541,6 +11545,10 @@ li {
 
 #for-more {
   display: none;
+}
+
+.lt-spacing-15 {
+  letter-spacing: 0.08em;
 }
 
 .mobile-header {

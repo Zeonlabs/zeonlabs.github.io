@@ -75,6 +75,9 @@ $gray-off: #979797;
 .effect-shine {
   color: $white;
 }
+.effect-shine:focus {
+  color: $white;
+}
 
 .wrapper {
   display: block;
@@ -743,4 +746,8 @@ li {
 // for more work 
 #for-more {
   display: none;
+}
+
+.lt-spacing-15{
+  letter-spacing: 0.08em;
 }
