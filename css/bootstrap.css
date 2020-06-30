@@ -11698,6 +11698,7 @@ li {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin-top: 4px;
 }
 
 .ze-menu-title {
@@ -11922,10 +11923,9 @@ li {
   background-size: cover;
   border-radius: 50%;
   border: 2px solid #252525;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-shadow: 10px 10px 20px rgba(39, 39, 39, 0.7), -8px -5px 13px #282828, inset 0px 4px 4px rgba(29, 29, 29, 0.25), inset -1px -2px 17px rgba(0, 0, 0, 0.25);
-          box-shadow: 10px 10px 20px rgba(39, 39, 39, 0.7), -8px -5px 13px #282828, inset 0px 4px 4px rgba(29, 29, 29, 0.25), inset -1px -2px 17px rgba(0, 0, 0, 0.25);
+  border: 0.5px solid #252525;
+  -webkit-box-shadow: 10px 10px 20px rgba(35, 35, 35, 0.7), -8px -5px 13px #242424, inset 0px 4px 4px rgba(29, 29, 29, 0.25), inset -1px -2px 17px rgba(0, 0, 0, 0.25);
+          box-shadow: 10px 10px 20px rgba(35, 35, 35, 0.7), -8px -5px 13px #242424, inset 0px 4px 4px rgba(29, 29, 29, 0.25), inset -1px -2px 17px rgba(0, 0, 0, 0.25);
 }
 
 .clock::before {
