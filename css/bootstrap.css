@@ -10975,8 +10975,10 @@ a.effect-shine:hover {
   margin-right: 0 !important;
 }
 
-.p-b-0 {
-  padding: 0 !important;
+@media (min-width: 768px) {
+  .p-b-0 {
+    padding: 0 !important;
+  }
 }
 
 .title .mega-font {
