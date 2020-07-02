@@ -10855,6 +10855,10 @@ a.text-dark:hover, a.text-dark:focus {
   background: #1d1d1d;
 }
 
+.bg-concept {
+  background-color: #50c2e3;
+}
+
 .color {
   color: #000 !important;
 }
