@@ -11232,6 +11232,7 @@ a.effect-shine:hover {
   list-style: none;
   line-height: 34px;
   font-size: 16px;
+  padding-top: 15px;
 }
 
 .toggle .tabs {

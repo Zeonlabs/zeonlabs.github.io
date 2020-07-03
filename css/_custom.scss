@@ -26,6 +26,7 @@ $gray-off: #979797;
 }
 .bg-clock {
   background: #1d1d1d;
+  // background-image: linear-gradient(to right top, #1d1d1d, #696969);
 } 
 .bg-concept{
   background-color: #50c2e3;
@@ -388,6 +389,7 @@ a.effect-shine:hover {
   list-style: none;
   line-height: 34px;
   font-size: 16px;
+  padding-top: 15px;
 }
 
 // technology section
