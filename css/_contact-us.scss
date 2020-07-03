@@ -5655,7 +5655,7 @@ em {
   position: relative;
   display: inline;
   width: -webkit-calc(100%);
-  width: -moz-calc(100%);
+  // width: -moz-calc(100%);
   width: calc(100%);
   padding: 0 0 2px 0;
   background-image: -webkit-linear-gradient(
