@@ -10859,6 +10859,18 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: #50c2e3;
 }
 
+.bg-goushala {
+  background-color: #042545;
+}
+
+.w-15 {
+  width: 15% !important;
+}
+
+.w-13 {
+  width: 12% !important;
+}
+
 .color {
   color: #000 !important;
 }
