@@ -11006,19 +11006,11 @@ a.effect-shine:hover {
   font-style: normal;
   font-weight: bold;
   font-size: 5.5rem;
-  line-height: 123.3%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  letter-spacing: 0.02em;
   margin-top: calc(100vh - 85vh);
   color: #ffffff;
-}
-
-@media (min-width: 1300px) {
-  .title .mega-font {
-    font-size: 6rem;
-  }
 }
 
 @media (max-width: 1199px) {
@@ -11090,57 +11082,49 @@ a.effect-shine:hover {
 }
 
 .button-wb {
-  color: white;
-  background-color: black;
-  border: 0.8px solid white;
+  color: #000;
+  background-color: #fff;
+  border: 0;
   font-size: 14px;
   outline: none;
-  padding: 16px 42px 16px 42px;
+  padding: 19.5px 50px 17.5px 50px;
   -webkit-transition: background-color 0.2s ease-in, color 0.2s ease-in;
   transition: background-color 0.2s ease-in, color 0.2s ease-in;
 }
 
 .button-wb:hover {
-  color: black;
-  background-color: white;
-  border: 0.8px solid white;
+  color: #fff;
+  background-color: #333333;
   font-size: 14px;
   outline: none;
 }
 
 .button-wb:active {
-  color: black;
-  background-color: white;
-  border: 0.8px solid white;
+  color: gray;
+  background-color: #1a1a1a;
   font-size: 14px;
   outline: none;
 }
 
 .button-bw {
-  color: #000;
-  background-color: #f9f9f9;
-  border: 1.5px solid #000;
+  color: #fff;
+  background-color: #000;
+  border: 0;
   font-size: 14px;
   outline: none;
-  padding: 18px 50px 16px 50px;
+  padding: 19.5px 50px 17.5px 50px;
   -webkit-transition: background-color 0.2s ease-in, color 0.2s ease-in;
   transition: background-color 0.2s ease-in, color 0.2s ease-in;
 }
 
 .button-bw:hover {
-  color: #fff;
-  background-color: #000;
-  border: 1.5px solid #000;
-  font-size: 14px;
-  outline: none;
+  background-color: #ebebeb;
+  color: #000;
 }
 
 .button-bw:active {
-  color: #000;
-  background-color: #fff;
-  border: 1.5px solid #fff;
-  font-size: 14px;
-  outline: none;
+  color: #999999;
+  background-color: #f7f7f7;
 }
 
 .margin {
@@ -11327,6 +11311,7 @@ a.effect-shine:hover {
 .clock-sub-text {
   color: #9b9b9b;
   line-height: 22px;
+  font-size: 15px;
 }
 
 @media (min-width: 991px) {
@@ -12024,13 +12009,9 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(../../Images/clock.webp);
+  background-color: #363636;
   background-size: cover;
   border-radius: 50%;
-  border: 2px solid #252525;
-  border: 0.5px solid #252525;
-  -webkit-box-shadow: 10px 10px 20px rgba(35, 35, 35, 0.7), -8px -5px 13px #242424, inset 0px 4px 4px rgba(29, 29, 29, 0.25), inset -1px -2px 17px rgba(0, 0, 0, 0.25);
-          box-shadow: 10px 10px 20px rgba(35, 35, 35, 0.7), -8px -5px 13px #242424, inset 0px 4px 4px rgba(29, 29, 29, 0.25), inset -1px -2px 17px rgba(0, 0, 0, 0.25);
 }
 
 .clock::before {

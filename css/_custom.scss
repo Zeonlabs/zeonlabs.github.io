@@ -164,9 +164,9 @@ a.effect-shine:hover {
     font-style: normal;
     font-weight: bold;
     font-size: 5.5rem;
-    line-height: 123.3%;
+    // line-height: 123.3%;
     align-items: center;
-    letter-spacing: 0.02em;
+    // letter-spacing: 0.02em;
     margin-top: calc(100vh - 85vh);
 
     color: #ffffff;
@@ -174,7 +174,7 @@ a.effect-shine:hover {
 
   @media (min-width: 1300px) {
     .mega-font {
-      font-size: 6rem;
+      // font-size: 5rem;
     }
   }
   @media (max-width: 1199px) {
@@ -244,25 +244,27 @@ a.effect-shine:hover {
 // =============================================
 
 .button-wb {
-  color: white;
-  background-color: black;
-  border: 0.8px solid white;
+  color: $black;
+  background-color: $white;
+  // border: 0.8px solid white;
+  border: 0;
   font-size: 14px;
   outline: none;
-  padding: 16px 42px 16px 42px;
+  // padding: 16px 42px 16px 42px;
+  padding: 19.5px 50px 17.5px 50px;
   transition: background-color 0.2s ease-in, color 0.2s ease-in;
 }
 .button-wb:hover {
-  color: black;
-  background-color: white;
-  border: 0.8px solid white;
+  color: $white;
+  background-color: darken($color: $white, $amount: 80);
+  // border: 0.8px solid white;
   font-size: 14px;
   outline: none;
 }
 .button-wb:active {
-  color: black;
-  background-color: white;
-  border: 0.8px solid white;
+  color: darken($color: $white, $amount: 50);
+  background-color: darken($color: $white, $amount: 90);
+  // border: 0.8px solid white;
   font-size: 14px;
   outline: none;
 }
@@ -270,27 +272,28 @@ a.effect-shine:hover {
 // black button
 
 .button-bw {
-  color: $black;
-  background-color: #f9f9f9;
-  border: 1.5px solid $black;
+  // color: $black;
+  // background-color: #f9f9f9;
+  // border: 1.5px solid $black;
+  color: $white;
+  background-color: $black;
+  border: 0;
   font-size: 14px;
   outline: none;
-  padding: 18px 50px 16px 50px;
+  padding: 19.5px 50px 17.5px 50px;
   transition: background-color 0.2s ease-in, color 0.2s ease-in;
 }
 .button-bw:hover {
-  color: $white;
-  background-color: $black;
-  border: 1.5px solid $black;
-  font-size: 14px;
-  outline: none;
+  // color: $white;
+  // background-color: $black;
+  // border: 1.5px solid $black;
+  background-color: lighten($color: $black, $amount: 92);
+  color: $black;
 }
 .button-bw:active {
-  color: $black;
-  background-color: $white;
-  border: 1.5px solid $white;
-  font-size: 14px;
-  outline: none;
+  color: lighten($color: $black, $amount: 60);
+  background-color: lighten($color: $black, $amount: 97);
+  // border: 1.5px solid $white;
 }
 
 .margin {
@@ -467,6 +470,7 @@ a.effect-shine:hover {
 .clock-sub-text {
   color: #9b9b9b;
   line-height: 22px;
+  font-size: 15px;
 }
 
 // footer

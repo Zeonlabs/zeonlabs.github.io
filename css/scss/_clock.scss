@@ -163,14 +163,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../../Images/clock.webp);
+    // background: url(../../Images/clock.webp);
+    background-color: rgb(54, 54, 54);
     background-size: cover;
     // border: 4px solid #000000;
     border-radius: 50%;
     // background: #252525;
-    border: 2px solid #252525;
-    border: 0.5px solid #252525;
-box-shadow: 10px 10px 20px rgba(35, 35, 35, 0.7), -8px -5px 13px #242424, inset 0px 4px 4px rgba(29, 29, 29, 0.25), inset -1px -2px 17px rgba(0, 0, 0, 0.25);
+    // border: 2px solid #252525;
+    // border: 0.5px solid #252525;
+    // box-shadow: 10px 10px 20px rgba(35, 35, 35, 0.7), -8px -5px 13px #242424, inset 0px 4px 4px rgba(29, 29, 29, 0.25), inset -1px -2px 17px rgba(0, 0, 0, 0.25);
 
 }
 .clock::before{
