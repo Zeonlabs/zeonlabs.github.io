@@ -17,73 +17,74 @@
 
 
     <script src="./js/jquery-3.2.1.min.js"></script>
+    <!-- <script src="https://apis.google.com/js/api.js"></script> -->
     <!-- ======================== favicon ======================== -->
     <link rel="icon" href="./Images/favicon_icon.svg" type="image/gif" sizes="16x16">
-
+    
     <title>zeonlabs</title>
-
+    
 </head>
 
 <body>
-
+    
     <!-- header -->
     <header class="contact container header-site bg-white d-lg-block">
         <nav class="navbar nav-padding navbar-main navbar-expand-lg ">
             <div class="display-contents">
                 <div class="d-lg-flex display-flex align-items-center justify-content-between w-100">
                     <a href="index.html" name="zeonlabs" title="zeonlabs" aria-label="zeonlabs"
-                        class="navbar-brand mr-5 d-lg-block">
-                        <img src="./Images/zeonlabs_logo_black.svg" alt="zeonlabs" class="img-fluid logo-header">
+                    class="navbar-brand mr-5 d-lg-block">
+                    <img src="./Images/zeonlabs_logo_black.svg" alt="zeonlabs" class="img-fluid logo-header">
+                </a>
+                
+                <div class="close-button">
+                    <a href="./index.html">
+                        <img src="./Images/close.svg">
                     </a>
-
-                    <div class="close-button">
-                        <a href="./index.html">
-                            <img src="./Images/close.svg">
-                        </a>
-                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-
-
-
-    <!-- title -->
-
-    <div class="title-section ze-request-container container  mt-5">
-        <div class="title-mega pt-5 pb-5">
-            <div class="ze-request-header">
-                <h1 class="">Hey! Tell us about<br>your vision <img src="./Images/hand.webp" class="img-size"></h1>
-            </div>
         </div>
+    </nav>
+</header>
 
 
+
+<!-- title -->
+
+<div class="title-section ze-request-container container  mt-5">
+    <div class="title-mega pt-5 pb-5">
+        <div class="ze-request-header">
+            <h1 class="">Hey! Tell us about<br>your vision <img src="./Images/hand.webp" class="img-size"></h1>
+        </div>
     </div>
+    
+    
+</div>
 
-    <div class="form-of-requrements container ze-request-container mt-5">
-
-        <!-- ze-request-form -->
-        <div class="ze-form-max-width font-cs-n mt-5">
-
-            <form class="ze-form" action="" method="">
-                <div class="ze-form-group">
-                    <div class="mt-5 mb-4">
-                        <h4 class="mt-5 color-gray-d2 font-cs-n">Are you interested in...</h4>
-                    </div>
-                    <div class="ze-checkbox-group">
-                        <div class="ze-checkbox ze-checkbox_rounded" data-magnetic="">
-                            <label>
-                                <input type="checkbox" name="service[]" value="branding">
-                                <span class="ze-checkbox_rounded-box">
-                                    <em>
-                                        <span class="ze-checkbox_rounded-title">Branding</span>
-                                    </em>
-                                    <span class="ze-checkbox_rounded-ripple"></span></span>
+<div class="form-of-requrements container ze-request-container mt-5">
+    
+    <!-- ze-request-form -->
+    <div class="ze-form-max-width font-cs-n mt-5">
+        
+        <form class="ze-form" id="cu-form">
+            <div class="ze-form-group">
+                <div class="mt-5 mb-4">
+                    <h4 class="mt-5 color-gray-d2 font-cs-n">Are you interested in...</h4>
+                </div>
+                <div class="ze-checkbox-group">
+                    <div class="ze-checkbox ze-checkbox_rounded" data-magnetic="">
+                        <label>
+                            <input class="interest-chkbox" type="checkbox" name="service[]" value="branding">
+                            <span class="ze-checkbox_rounded-box">
+                                <em>
+                                    <span class="ze-checkbox_rounded-title">Branding</span>
+                                </em>
+                                <span class="ze-checkbox_rounded-ripple"></span></span>
                             </label>
                         </div>
                         <div class="ze-checkbox ze-checkbox_rounded" data-magnetic="">
                             <label>
-                                <input type="checkbox" name="service[]" value="UX/UI Design">
+                                <input class="interest-chkbox" type="checkbox" name="service[]" value="UX/UI Design">
                                 <span class="ze-checkbox_rounded-box">
                                     <em><span class="ze-checkbox_rounded-title">UX/UI Design</span>
                                     </em>
@@ -93,118 +94,118 @@
                         </div>
                         <div class="ze-checkbox ze-checkbox_rounded" data-magnetic="">
                             <label>
-                                <input type="checkbox" name="service[]" value="app-design">
+                                <input class="interest-chkbox" type="checkbox" name="service[]" value="app-design">
                                 <span class="ze-checkbox_rounded-box"><em>
-                                        <span class="ze-checkbox_rounded-title" data-text="App design">Web
-                                            development</span></em>
-                                    <span class="ze-checkbox_rounded-ripple"></span></span>
-                            </label>
-                        </div>
-                        <div class="ze-checkbox ze-checkbox_rounded" data-magnetic="">
-                            <label><input type="checkbox" name="service[]" value="iOS development"><span
-                                    class="ze-checkbox_rounded-box"><em>
-                                        <span class="ze-checkbox_rounded-title">iOS development</span></em>
-                                    <span class="ze-checkbox_rounded-ripple"></span></span>
-                            </label>
-                        </div>
+                                    <span class="ze-checkbox_rounded-title" data-text="App design">Web
+                                        development</span></em>
+                                        <span class="ze-checkbox_rounded-ripple"></span></span>
+                                    </label>
+                                </div>
+                                <div class="ze-checkbox ze-checkbox_rounded" data-magnetic="">
+                                    <label><input class="interest-chkbox" type="checkbox" name="service[]" value="iOS development"><span
+                                        class="ze-checkbox_rounded-box"><em>
+                                            <span class="ze-checkbox_rounded-title">iOS development</span></em>
+                                            <span class="ze-checkbox_rounded-ripple"></span></span>
+                                        </label>
+                                    </div>
                         <div class="ze-checkbox ze-checkbox_rounded" data-magnetic="">
                             <label>
-                                <input type="checkbox" name="service[]" value="Android development">
+                                <input class="interest-chkbox" type="checkbox" name="service[]" value="Android development">
                                 <span class="ze-checkbox_rounded-box"><em></em>
                                     <span class="ze-checkbox_rounded-title">Android app</span>
-                                    </em><span class="ze-checkbox_rounded-ripple"></span>
-                                </span>
+                                </em><span class="ze-checkbox_rounded-ripple"></span>
+                            </span>
+                        </label>
+                    </div>
+                    
+                    <div class="ze-checkbox ze-checkbox_rounded" data-magnetic=""
+                    style="transform: translate3d(0px, 0px, 0px);">
+                    <label>
+                        <input class="interest-chkbox" type="checkbox" name="service[]" value="Front-end design">
+                        <span class="ze-checkbox_rounded-box"><em>
+                            <span class="ze-checkbox_rounded-title">Front-end design</span></em>
+                            <span class="ze-checkbox_rounded-ripple"></span>
+                        </span>
+                    </label>
+                </div>
+                
+                <div class="ze-checkbox ze-checkbox_rounded" data-magnetic="">
+                    <label>
+                        <input class="interest-chkbox" type="checkbox" name="service[]" value="ios">
+                        <span class="ze-checkbox_rounded-box"><em>
+                            <span class="ze-checkbox_rounded-title" data-text="iOS development">Software
+                                development</span>
+                            </em>
+                            <span class="ze-checkbox_rounded-ripple"></span></span>
+                        </label>
+                    </div>
+                    <div class="ze-checkbox ze-checkbox_rounded" data-magnetic="">
+                        <label>
+                            <input class="interest-chkbox" type="checkbox" name="service[]" value="ERP">
+                            <span class="ze-checkbox_rounded-box"><em>
+                                <span class="ze-checkbox_rounded-title">ERP</span>
+                            </em><span class="ze-checkbox_rounded-ripple"></span></span>
+                        </label>
+                    </div>
+                    <div class="ze-checkbox ze-checkbox_rounded" data-magnetic=""
+                    style="transform: translate3d(0px, 0px, 0px);">
+                    <label>
+                        <input class="interest-chkbox" type="checkbox" name="service[]" value="site-scratch">
+                        <span class="ze-checkbox_rounded-box"><em>
+                            <span class="ze-checkbox_rounded-title" data-text="Site from scratch">Digital
+                                signage</span>
+                            </em><span class="ze-checkbox_rounded-ripple">
+                            </span></span>
+                        </label>
+                    </div>
+                    <div class="ze-checkbox ze-checkbox_rounded" data-magnetic=""
+                    style="transform: translate3d(0px, 0px, 0px);">
+                    <label>
+                        <input class="interest-chkbox" type="checkbox" name="service[]" value="app-scratch">
+                        <span class="ze-checkbox_rounded-box">
+                            <em>
+                                <span class="ze-checkbox_rounded-title" data-text="App from scratch">Digital
+                                    marketing</span>
+                                </em>
+                                <span class="ze-checkbox_rounded-ripple"></span></span>
                             </label>
                         </div>
-
-                        <div class="ze-checkbox ze-checkbox_rounded" data-magnetic=""
-                            style="transform: translate3d(0px, 0px, 0px);">
+                        <div class="ze-checkbox ze-checkbox_rounded" data-magnetic="">
                             <label>
-                                <input type="checkbox" name="service[]" value="Front-end design">
+                                <input class="interest-chkbox" type="checkbox" name="service[]" value="android">
                                 <span class="ze-checkbox_rounded-box"><em>
-                                        <span class="ze-checkbox_rounded-title">Front-end design</span></em>
+                                    <span class="ze-checkbox_rounded-title" data-text="Android development">Cloud
+                                        infrastructure dev</span>
+                                    </em>
                                     <span class="ze-checkbox_rounded-ripple"></span>
                                 </span>
                             </label>
                         </div>
-
-                        <div class="ze-checkbox ze-checkbox_rounded" data-magnetic="">
-                            <label>
-                                <input type="checkbox" name="service[]" value="ios">
-                                <span class="ze-checkbox_rounded-box"><em>
-                                        <span class="ze-checkbox_rounded-title" data-text="iOS development">Software
-                                            development</span>
-                                    </em>
-                                    <span class="ze-checkbox_rounded-ripple"></span></span>
-                            </label>
-                        </div>
-                        <div class="ze-checkbox ze-checkbox_rounded" data-magnetic="">
-                            <label>
-                                <input type="checkbox" name="service[]" value="ERP">
-                                <span class="ze-checkbox_rounded-box"><em>
-                                        <span class="ze-checkbox_rounded-title">ERP</span>
-                                    </em><span class="ze-checkbox_rounded-ripple"></span></span>
-                            </label>
-                        </div>
-                        <div class="ze-checkbox ze-checkbox_rounded" data-magnetic=""
-                            style="transform: translate3d(0px, 0px, 0px);">
-                            <label>
-                                <input type="checkbox" name="service[]" value="site-scratch">
-                                <span class="ze-checkbox_rounded-box"><em>
-                                        <span class="ze-checkbox_rounded-title" data-text="Site from scratch">Digital
-                                            signage</span>
-                                    </em><span class="ze-checkbox_rounded-ripple">
-                                    </span></span>
-                            </label>
-                        </div>
-                        <div class="ze-checkbox ze-checkbox_rounded" data-magnetic=""
-                            style="transform: translate3d(0px, 0px, 0px);">
-                            <label>
-                                <input type="checkbox" name="service[]" value="app-scratch">
-                                <span class="ze-checkbox_rounded-box">
-                                    <em>
-                                        <span class="ze-checkbox_rounded-title" data-text="App from scratch">Digital
-                                            marketing</span>
-                                    </em>
-                                    <span class="ze-checkbox_rounded-ripple"></span></span>
-                            </label>
-                        </div>
-                        <div class="ze-checkbox ze-checkbox_rounded" data-magnetic="">
-                            <label>
-                                <input type="checkbox" name="service[]" value="android">
-                                <span class="ze-checkbox_rounded-box"><em>
-                                        <span class="ze-checkbox_rounded-title" data-text="Android development">Cloud
-                                            infrastructure dev</span>
-                                    </em>
-                                    <span class="ze-checkbox_rounded-ripple"></span>
-                                </span>
-                            </label>
-                        </div>
                     </div>
                 </div>
-
-
+                
+                
                 <div class="ze-form-group">
-                    <div class="ze-input ze-input_light"><input type="text" name="name" placeholder="Your name"
-                            required="">
+                    <div class="ze-input ze-input_light">
+                        <input type="text" id="name" name="name" placeholder="Your name" required="">
                         <div class="ze-input_light-line"></div>
                     </div>
                 </div>
                 <div class="ze-form-group">
-                    <div class="ze-input ze-input_light"><input type="email" name="email" placeholder="Your email"
-                            required="">
+                    <div class="ze-input ze-input_light">
+                        <input type="email" id="email" name="email" placeholder="Your email" required="">
                         <div class="ze-input_light-line"></div>
                     </div>
                 </div>
                 <div class="ze-form-group">
-                    <div class="ze-input ze-input_light"><input type="name" name="name" placeholder="Your country"
-                            required="">
+                    <div class="ze-input ze-input_light">
+                        <input type="name" id="country" name="name" placeholder="Your country" required="">
                         <div class="ze-input_light-line"></div>
                     </div>
                 </div>
                 <div class="ze-form-group">
-                    <div class="ze-input ze-input_light"><textarea name="mess" placeholder="Tell us about yor project"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 93px;"></textarea>
+                    <div class="ze-input ze-input_light">
+                        <textarea name="mess" id="desc" placeholder="Tell us about yor project" style="overflow: hidden; overflow-wrap: break-word; height: 93px;"></textarea>
                         <div class="ze-input_light-line"></div>
                     </div>
                 </div>
@@ -213,140 +214,156 @@
                     <!-- <button class="ze-btn ze-btn_send" type="submit" data-magnetic="">
                         <span data-text="Submit">Submit</span>
                     </button> -->
-                    <button class="button-bw text-uppercase font-cs-b lt-spacing-15 mb-5" type="submit" data-magnetic="">Submit</button>
+                    <button class="button-bw text-uppercase font-cs-b lt-spacing-15 mb-5" type="submit"
+                    data-magnetic="">Submit</button>
                 </div>
             </form>
         </div>
     </div>
-
     
-
-  <!-- footer -->
-
-  <footer class="bg-black overflow-auto py-xl-10 py-md-8 py-sm-8 footer-top-border">
-    <div class="container mt-1">
-
-
-      <div class="mt-5">
-        <div class="ze-outro-footer">
-          <div class="ze-outro-container">
-            <div class="ze-outro-grid">
-              <div class="ze-outro-grid-col -left">
-
-                <div class="ze-outro-mail mb-5">
-                  <img src="./Images/zeonlabs_logo.svg" alt="zeonlabs" class=" img-fluid logo-header mb-2"
-                    style="width: 152px;">
+    
+    
+    <!-- footer -->
+    
+    <footer class="bg-black overflow-auto py-xl-10 py-md-8 py-sm-8 footer-top-border">
+        <div class="container mt-1">
+            
+            
+            <div class="mt-5">
+                <div class="ze-outro-footer">
+                    <div class="ze-outro-container">
+                        <div class="ze-outro-grid">
+                            <div class="ze-outro-grid-col -left">
+                                
+                                <div class="ze-outro-mail mb-5">
+                                    <img src="./Images/zeonlabs_logo.svg" alt="zeonlabs"
+                                    class=" img-fluid logo-header mb-2" style="width: 152px;">
+                                </div>
+                                
+                                <div class="ze-outro-mail color-gray  email-hover">
+                                    <a href=""><em>
+                                        <span class="font-cs-n" data-text="">info@zeonlabs.co</span></em>
+                                    </a>
+                                </div>
+                                <address class="ze-outro-address ">
+                                    <p class="color-gray font-cs-n email-hover"><img src="./Images/india_flag_icon.svg">
+                                        &nbsp; +91 80
+                                        9727 9994</p>
+                                        <p class="color-gray font-cs-n email-hover mt-2"><img
+                                            src="./Images/india_flag_icon.svg"> &nbsp; +91
+                                            81 5483 1233 &nbsp;</p>
+                                            <p class="color-gray font-cs-n email-hover mt-2"><img
+                                                src="./Images/aus_flag_icon.svg"> &nbsp; +61
+                                                (41) 324 1384 &nbsp;</p>
+                                            </address>
+                                        </div>
+                                        
+                                        <div class="ze-outro-grid-col -right">
+                                            <div class="ze-outro-social ">
+                                                <a class="font-cs-n effect-shine ze-outro-social-item -left" href="" target="_blank"
+                                                rel="noopener">
+                                                <span class="color-gray" data-text="Facebook">Home</span>
+                                            </a>
+                                            
+                                            <a class="font-cs-n effect-shine ze-outro-social-item" href="" target="_blank"
+                                            rel="noopener">
+                                            <span class="color-gray" data-text="Patreon">Work</span>
+                                        </a>
+                                        
+                                        <a class="font-cs-n effect-shine ze-outro-social-item" href="" target="_blank"
+                                        rel="noopener">
+                                        <span class="color-gray" data-text="Behance">Services</span>
+                                    </a>
+                                    
+                                    <a class="font-cs-n effect-shine ze-outro-social-item" href="" target="_blank"
+                                    rel="noopener">
+                                    <span class="color-gray" data-text="Dribbble">Technology</span>
+                                </a>
+                                
+                                <a class="font-cs-n effect-shine ze-outro-social-item " href="" target="_blank"
+                                rel="noopener">
+                                <span class="color-gray" data-text="Instagram">About</span>
+                            </a>
+                            
+                            <a class="font-cs-n effect-shine ze-outro-social-item" href="" target="_blank"
+                            rel="noopener">
+                            <span class="color-gray contact-blink" data-text="YouTube"><svg height="6"
+                                width="6" class="blinking">
+                                <circle cx="10" cy="10" r="20" fill="#00ff19"></circle>
+                                
+                            </svg>Contact us</span>
+                        </a>
+                        
+                    </div>
                 </div>
-
-                <div class="ze-outro-mail color-gray  email-hover">
-                  <a href=""><em>
-                      <span class="font-cs-n" data-text="">info@zeonlabs.co</span></em>
-                  </a>
-                </div>
-                <address class="ze-outro-address ">
-                  <p class="color-gray font-cs-n email-hover"><img src="./Images/india_flag_icon.svg"> &nbsp; +91 80
-                    9727 9994</p>
-                  <p class="color-gray font-cs-n email-hover mt-2"><img src="./Images/india_flag_icon.svg"> &nbsp; +91
-                    81 5483 1233 &nbsp;</p>
-                  <p class="color-gray font-cs-n email-hover mt-2"><img src="./Images/aus_flag_icon.svg"> &nbsp; +61
-                    (41) 324 1384 &nbsp;</p>
-                </address>
-              </div>
-
-              <div class="ze-outro-grid-col -right">
-                <div class="ze-outro-social ">
-                  <a class="font-cs-n effect-shine ze-outro-social-item -left" href="" target="_blank" rel="noopener">
-                    <span class="color-gray" data-text="Facebook">Home</span>
-                  </a>
-
-                  <a class="font-cs-n effect-shine ze-outro-social-item" href="" target="_blank" rel="noopener">
-                    <span class="color-gray" data-text="Patreon">Work</span>
-                  </a>
-
-                  <a class="font-cs-n effect-shine ze-outro-social-item" href="" target="_blank" rel="noopener">
-                    <span class="color-gray" data-text="Behance">Services</span>
-                  </a>
-
-                  <a class="font-cs-n effect-shine ze-outro-social-item" href="" target="_blank" rel="noopener">
-                    <span class="color-gray" data-text="Dribbble">Technology</span>
-                  </a>
-
-                  <a class="font-cs-n effect-shine ze-outro-social-item " href="" target="_blank" rel="noopener">
-                    <span class="color-gray" data-text="Instagram">About</span>
-                  </a>
-
-                  <a class="font-cs-n effect-shine ze-outro-social-item" href="" target="_blank" rel="noopener">
-                    <span class="color-gray contact-blink" data-text="YouTube"><svg height="6" width="6"
-                        class="blinking">
-                        <circle cx="10" cy="10" r="20" fill="#00ff19"></circle>
-
-                      </svg>Contact us</span>
-                  </a>
-
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-
     </div>
+</div>
 
-    <!-- <div class="logo text-center mb-4 opacity-2">
+</div>
+
+<!-- <div class="logo text-center mb-4 opacity-2">
     <a><img src="./Images/zeonlabs_logo_black.svg"></a>
-  </div> -->
+</div> -->
 
-  </footer>
+</footer>
 
-  <!-- social media icons -->
-  <section class="py-4 social-footer-icon bg-black footer-top-border">
-    <div class="container p-0">
-      <div class="social-icons-wrap  d-flex align-items-center justify-content-around">
-        <div class="social-icon">
-          <a href="" class="effect-shine social-icon-size h2 mb-0 color-white"><i class="fa fa-facebook"></i></a>
-        </div>
-        <div class="social-icon">
-          <a href="" class="effect-shine social-icon-size h2 mb-0 color-white"><i class="fa fa-instagram"></i></a>
-        </div>
-        <div class="social-icon">
-          <a href="" class="effect-shine social-icon-size h2 mb-0 color-white"><i class="fa fa-behance"></i></a>
-        </div>
-        <div class="social-icon">
-          <a href="" class="effect-shine social-icon-size h2 mb-0 color-white"><i class="fa fa-dribbble"></i></a>
-        </div>
-        <div class="social-icon">
-          <a href="" class="effect-shine social-icon-size h2 mb-0 color-white"><i class="fa fa-twitter"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class=" social-footer-icon bg-black footer-top-border">
-    <div class="container text-center">
-      <p class="py-2 m-0 color-gray"> © 2020 zeonlabs.co All rights reserved.</p>
-    </div>
-  </section>
-
-</body>
-
-<script type="text/javascript">
-    const deg = 6;
-    const hr = document.querySelector('#hr');
-    const mn = document.querySelector('#mn');
-    const sc = document.querySelector('#sc');
-
-    setInterval(() => {
-
-        let day = new Date();
-        let hh = day.getHours() * 30;
-        let mm = day.getMinutes() * deg;
-        let ss = day.getSeconds() * deg;
-
-        hr.style.transform = `rotateZ(${(hh) + (mm / 12)}deg)`;
-        mn.style.transform = `rotateZ(${(mm)}deg)`;
-        sc.style.transform = `rotateZ(${(ss)}deg)`;
-    })
-</script>
-
-
-</html>
+<!-- social media icons -->
+    <section class="py-4 social-footer-icon bg-black footer-top-border">
+        <div class="container p-0">
+            <div class="social-icons-wrap  d-flex align-items-center justify-content-around">
+                <div class="social-icon">
+                    <a href="" class="effect-shine social-icon-size h2 mb-0 color-white"><i
+                            class="fa fa-facebook"></i></a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="" class="effect-shine social-icon-size h2 mb-0 color-white"><i
+                                class="fa fa-instagram"></i></a>
+                            </div>
+                            <div class="social-icon">
+                                <a href="" class="effect-shine social-icon-size h2 mb-0 color-white"><i
+                                    class="fa fa-behance"></i></a>
+                                </div>
+                                <div class="social-icon">
+                                    <a href="" class="effect-shine social-icon-size h2 mb-0 color-white"><i
+                                        class="fa fa-dribbble"></i></a>
+                                    </div>
+                                    <div class="social-icon">
+                                        <a href="" class="effect-shine social-icon-size h2 mb-0 color-white"><i
+                                            class="fa fa-twitter"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            
+                            <section class=" social-footer-icon bg-black footer-top-border">
+                                <div class="container text-center">
+                                    <p class="py-2 m-0 color-gray"> © 2020 zeonlabs.co All rights reserved.</p>
+                                </div>
+                            </section>
+                            
+                        </body>
+                        <script src="./js/contactForm.js"></script>
+                        
+                        <!-- <script type="text/javascript">
+                            const deg = 6;
+                            const hr = document.querySelector('#hr');
+                            const mn = document.querySelector('#mn');
+                            const sc = document.querySelector('#sc');
+                            
+                            setInterval(() => {
+                                
+                                let day = new Date();
+                                let hh = day.getHours() * 30;
+                                let mm = day.getMinutes() * deg;
+                                let ss = day.getSeconds() * deg;
+                                
+                                hr.style.transform = `rotateZ(${(hh) + (mm / 12)}deg)`;
+                                mn.style.transform = `rotateZ(${(mm)}deg)`;
+                                sc.style.transform = `rotateZ(${(ss)}deg)`;
+                            })
+                        </script> -->
+                        
+                        
+                        </html>
