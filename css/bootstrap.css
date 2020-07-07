@@ -17617,7 +17617,8 @@ em {
 .ze-request-header img {
   position: relative;
   top: -2px;
-  width: 38px;
+  left: -10px;
+  width: 58px;
   display: inline-block;
   vertical-align: middle;
 }
