@@ -13,7 +13,7 @@ const handleSubmit = (e) => {
     let formData = new FormData()
     formData.append('entry.1985184073', interests)
     formData.append('entry.704152083', form.querySelector('#name').value)
-    formData.append('entry.1962499889', form.querySelector('#email').value)
+    formData.append('entry.1962499889', form.querySelector('#emailadd').value)
     formData.append('entry.2010145217', form.querySelector('#country').value)
     formData.append('entry.1775142135', form.querySelector('#desc').value)
       
