@@ -11082,49 +11082,59 @@ a.effect-shine:hover {
 }
 
 .button-wb {
-  color: #000;
-  background-color: #fff;
-  border: 0;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
   font-size: 14px;
   outline: none;
-  padding: 19.5px 50px 17.5px 50px;
-  -webkit-transition: background-color 0.2s ease-in, color 0.2s ease-in;
-  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+  padding: 16px 42px 16px 42px;
+  -webkit-transition: background-color 0.2s ease-in, color 0.2s ease-in, border 0.2s ease-in;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in, border 0.2s ease-in;
+  text-decoration: none;
+  outline: none;
 }
 
 .button-wb:hover {
-  color: #fff;
-  background-color: #333333;
+  color: black;
+  background-color: white;
+  border: 1px solid white;
   font-size: 14px;
   outline: none;
 }
 
 .button-wb:active {
-  color: gray;
-  background-color: #1a1a1a;
+  color: black;
+  background-color: white;
+  border: 1px solid white;
   font-size: 14px;
   outline: none;
 }
 
 .button-bw {
-  color: #fff;
-  background-color: #000;
-  border: 0;
+  color: #000;
+  background-color: #fff;
+  border: 1.5px solid #000;
   font-size: 14px;
   outline: none;
-  padding: 19.5px 50px 17.5px 50px;
+  padding: 18px 70px 18px 70px;
   -webkit-transition: background-color 0.2s ease-in, color 0.2s ease-in;
   transition: background-color 0.2s ease-in, color 0.2s ease-in;
 }
 
 .button-bw:hover {
-  background-color: #ebebeb;
-  color: #000;
+  color: #fff;
+  background-color: #000;
+  border: 1.5px solid #000;
+  font-size: 14px;
+  outline: none;
 }
 
 .button-bw:active {
-  color: #999999;
-  background-color: #f7f7f7;
+  color: #000;
+  background-color: #fff;
+  border: 1.5px solid #fff;
+  font-size: 14px;
+  outline: none;
 }
 
 .margin {
@@ -11998,8 +12008,8 @@ li {
 }
 
 .clock {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

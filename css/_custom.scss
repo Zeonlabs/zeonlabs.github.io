@@ -136,6 +136,7 @@ a.effect-shine:hover {
   margin-top: calc(100vh - 98vh);
   margin-bottom: calc(100vh - 95vh);
 }
+
 // Home Content
 .home-content {
   position: absolute;
@@ -243,28 +244,33 @@ a.effect-shine:hover {
 // ============ button =========================
 // =============================================
 
+// =============================================
+// ============ button =========================
+// =============================================
+
 .button-wb {
-  color: $black;
-  background-color: $white;
-  // border: 0.8px solid white;
-  border: 0;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
   font-size: 14px;
   outline: none;
-  // padding: 16px 42px 16px 42px;
-  padding: 19.5px 50px 17.5px 50px;
-  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+  padding: 16px 42px 16px 42px;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in, border 0.2s ease-in;
+
+  text-decoration: none;
+  outline: none;
 }
 .button-wb:hover {
-  color: $white;
-  background-color: darken($color: $white, $amount: 80);
-  // border: 0.8px solid white;
+  color: black;
+  background-color: white;
+  border: 1px solid white;
   font-size: 14px;
   outline: none;
 }
 .button-wb:active {
-  color: darken($color: $white, $amount: 50);
-  background-color: darken($color: $white, $amount: 90);
-  // border: 0.8px solid white;
+  color: black;
+  background-color: white;
+  border: 1px solid white;
   font-size: 14px;
   outline: none;
 }
@@ -272,28 +278,27 @@ a.effect-shine:hover {
 // black button
 
 .button-bw {
-  // color: $black;
-  // background-color: #f9f9f9;
-  // border: 1.5px solid $black;
-  color: $white;
-  background-color: $black;
-  border: 0;
+  color: $black;
+  background-color: $white;
+  border: 1.5px solid $black;
   font-size: 14px;
   outline: none;
-  padding: 19.5px 50px 17.5px 50px;
+  padding: 18px 70px 18px 70px;
   transition: background-color 0.2s ease-in, color 0.2s ease-in;
 }
 .button-bw:hover {
-  // color: $white;
-  // background-color: $black;
-  // border: 1.5px solid $black;
-  background-color: lighten($color: $black, $amount: 92);
-  color: $black;
+  color: $white;
+  background-color: $black;
+  border: 1.5px solid $black;
+  font-size: 14px;
+  outline: none;
 }
 .button-bw:active {
-  color: lighten($color: $black, $amount: 60);
-  background-color: lighten($color: $black, $amount: 97);
-  // border: 1.5px solid $white;
+  color: $black;
+  background-color: $white;
+  border: 1.5px solid $white;
+  font-size: 14px;
+  outline: none;
 }
 
 .margin {
