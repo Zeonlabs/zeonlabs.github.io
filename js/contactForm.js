@@ -16,14 +16,16 @@ const handleSubmit = (e) => {
     formData.append('entry.1962499889', form.querySelector('#email').value)
     formData.append('entry.2010145217', form.querySelector('#country').value)
     formData.append('entry.1775142135', form.querySelector('#desc').value)
-
+      
     fetch("https://docs.google.com/forms/d/e/1FAIpQLSdZwzKpuDg3tA0U89BwnQVWq2E5gbXAbl8IxfhjLC08jXY3Ag/formResponse?", {
         method: "POST",
-        body: formData
+        body: formData,
+        mode:"no-cors",
     }).then(res => {
-        console.log("Request complete! response:", res.status);
-    })
-    //   .catch(e => console.log(e));
+        console.log("Request complete! response:", res);
+        window.location.replace("../index.html");
+    }).catch(e => console.log(e))
+    // window.location.replace("http://www.w3schools.com");
 }
 
 form.addEventListener('submit', handleSubmit)
