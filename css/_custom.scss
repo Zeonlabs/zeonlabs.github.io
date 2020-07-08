@@ -244,10 +244,6 @@ a.effect-shine:hover {
 // ============ button =========================
 // =============================================
 
-// =============================================
-// ============ button =========================
-// =============================================
-
 .button-wb {
   color: white;
   background-color: black;
@@ -256,7 +252,6 @@ a.effect-shine:hover {
   outline: none;
   padding: 16px 42px 16px 42px;
   transition: background-color 0.2s ease-in, color 0.2s ease-in, border 0.2s ease-in;
-
   text-decoration: none;
   outline: none;
 }
@@ -268,8 +263,15 @@ a.effect-shine:hover {
   outline: none;
 }
 .button-wb:active {
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  font-size: 14px;
+  outline: none;
+}
+.button-wb:focus {
+  color: white;
+  background-color: black;
   border: 1px solid white;
   font-size: 14px;
   outline: none;
@@ -601,8 +603,9 @@ li {
 
   overflow: hidden;
   position: absolute;
-  top: 30%;
-  left: -12%;
+  top: 35%;
+  left: -5%;
+  // right: -15%;
   border-radius: 50%;
 }
 .contact-blink {
@@ -852,3 +855,40 @@ li {
     display: none;
   }
 }
+
+
+// footer Quick links
+
+.footer-q-links{
+  width: calc(33.33% - 20px);
+}
+// .row-md-center{
+//   text-align: center !important;
+// }
+
+
+// 768
+
+@media(max-width:766px){
+  // .contact-blinck-m{
+  //   width: fit-content;
+  // }
+  .pb-2{
+    padding-bottom: 1.5rem !important;
+  }
+  .b-n-none{
+    display: none;
+  }
+  .blinking {
+    left: 12% !important;
+  }
+  .row-md-center{
+    text-align: center !important;
+  }
+}
+@media(min-width:766px){
+  
+}
+
+
+
