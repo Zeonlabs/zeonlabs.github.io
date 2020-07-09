@@ -22,7 +22,7 @@ const handleSubmit = (e) => {
         body: formData,
         mode:"no-cors",
     }).then(res => {
-        console.log("Request complete! response:", res);
+        // console.log("Request complete! response:", res);
         window.location.replace("../index.html");
     }).catch(e => console.log(e))
     // window.location.replace("http://www.w3schools.com");
