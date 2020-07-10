@@ -133,8 +133,9 @@ a.effect-shine:hover {
   min-height: 600px;
 }
 .button-view-work {
+  // margin-top: calc(100vh - 99vh);
+  // margin-bottom: calc(100vh - 92vh);
   margin-top: calc(100vh - 98vh);
-  margin-bottom: calc(100vh - 95vh);
   position: absolute;
 }
 
