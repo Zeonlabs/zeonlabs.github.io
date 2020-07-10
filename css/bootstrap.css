@@ -11697,7 +11697,7 @@ li {
   }
 }
 
-@media (min-width: 766px) {
+@media (min-width: 1017px) {
   .img-footer-logo {
     margin-left: 3rem !important;
   }
@@ -12195,6 +12195,12 @@ input {
 
 .ze-checkbox:hover .ze-checkbox_rounded-box:before {
   border: 1px solid black !important;
+}
+
+@media (max-width: 420px) {
+  .ze-menu-nav-item.-marked a:before {
+    width: 200px !important;
+  }
 }
 
 .button-submit {
@@ -14151,7 +14157,7 @@ em {
 
 @media (min-width: 360px) {
   .ze-menu-nav-item a {
-    font-size: 42px;
+    font-size: 40px;
     line-height: 52px;
   }
 }

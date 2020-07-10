@@ -49,6 +49,14 @@ input {
   }
 }
 
+// contact us bottum line
+
+@media (max-width: 420px){
+  
+.ze-menu-nav-item.-marked a:before {
+  width: 200px !important;
+}
+}
 // submit button
 
 .button-submit {
@@ -1871,7 +1879,7 @@ em {
 }
 @media (min-width: 360px) {
   .ze-menu-nav-item a {
-    font-size: 42px;
+    font-size: 40px;
     line-height: 52px;
   }
 }
