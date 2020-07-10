@@ -10980,6 +10980,7 @@ a.effect-shine:hover {
 .button-view-work {
   margin-top: calc(100vh - 98vh);
   margin-bottom: calc(100vh - 95vh);
+  position: absolute;
 }
 
 .home-content {
@@ -11009,7 +11010,6 @@ a.effect-shine:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: calc(100vh - 85vh);
   color: #ffffff;
 }
 
@@ -11028,25 +11028,25 @@ a.effect-shine:hover {
 
 @media (max-width: 767px) {
   .title .mega-font {
-    font-size: 2.8rem;
+    font-size: 3.6rem;
   }
 }
 
 @media (max-width: 583px) {
   .title .mega-font {
-    font-size: 2.5rem;
+    font-size: 3.6rem;
   }
 }
 
 @media (max-width: 583px) {
   .title .mega-font {
-    font-size: 2.4rem;
+    font-size: 3.2rem;
   }
 }
 
 @media (max-width: 492px) {
   .title .mega-font {
-    font-size: 2rem;
+    font-size: 2.6rem;
   }
 }
 
@@ -11059,7 +11059,7 @@ a.effect-shine:hover {
 
 @media (max-width: 360px) {
   .title .mega-font {
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     line-height: 50px;
   }
   .title .sub-text {
@@ -11677,10 +11677,22 @@ li {
     display: none;
   }
   .blinking {
-    left: 12% !important;
+    left: 10% !important;
   }
   .row-md-center {
     text-align: center !important;
+  }
+  .quick-links {
+    display: none;
+  }
+  .contact-num-info {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 766px) {
+  .img-footer-logo {
+    margin-left: 3rem !important;
   }
 }
 
