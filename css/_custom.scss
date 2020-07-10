@@ -175,9 +175,25 @@ a.effect-shine:hover {
     color: #ffffff;
   }
 
+  .sub-text {
+    position: inherit;
+    font-family: "Circular Std Book";
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #c5c5c5;
+    padding: 0;
+    margin-top: calc(100vh - 98vh);
+  }
+
   @media (min-width: 1300px) {
     .mega-font {
       // font-size: 5rem;
+    }
+    .sub-text{
+      font-size: 20px;
     }
   }
   @media (max-width: 1199px) {
@@ -206,6 +222,9 @@ a.effect-shine:hover {
     .mega-font {
       font-size: 3.2rem;
     }
+    .sub-text{
+      font-size: 18px;
+    }
   }
   @media (max-width: 492px) {
     .mega-font {
@@ -229,18 +248,7 @@ a.effect-shine:hover {
     }
   }
 
-  .sub-text {
-    position: inherit;
-    font-family: "Circular Std Book";
-    font-style: normal;
-    font-weight: 100;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 0.02em;
-    color: #c5c5c5;
-    padding: 0;
-    margin-top: calc(100vh - 98vh);
-  }
+  
 }
 
 // =============================================
@@ -901,8 +909,6 @@ li {
     margin-left: 3rem !important;
   }
 }
-
-
-
-
-
+.cursor-d{
+  cursor: default;
+}
