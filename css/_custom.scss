@@ -357,7 +357,7 @@ a.effect-shine:hover {
 .underline {
   position: relative;
   text-decoration: none;
-  color: #979797;
+  color: $gray-off;
   outline: none;
 }
 .underline:hover {
@@ -381,7 +381,7 @@ a.effect-shine:hover {
   left: 0;
   right: 0;
   width: 50%;
-  background: #979797;
+  background: $gray-off;
 
   /* optional animation */
   -o-transition: 0.5s;
