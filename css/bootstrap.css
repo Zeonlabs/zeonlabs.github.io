@@ -11707,6 +11707,15 @@ li {
   cursor: default;
 }
 
+.ze-outro-address {
+  display: -ms-grid;
+  display: grid;
+}
+
+.ze-outro-address a {
+  text-decoration: none;
+}
+
 .mobile-header {
   background-color: #000;
   -webkit-box-shadow: 0px 0px 2px 0px rgba(255, 255, 255, 0.534);
