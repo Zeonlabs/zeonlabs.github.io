@@ -912,6 +912,7 @@ li {
 .ze-outro-address{
   display: grid;
   a{
-    text-decoration: none
+    text-decoration: none;
+    width: fit-content;
   }
 }
