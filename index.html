@@ -838,7 +838,7 @@
     <div class="container ">
 
       <div class="row">
-        <div class="colxl-6 col-sm-6 py-4">
+        <div class="col-xl-3 col-sm-6 py-4 ind">
 
           <div class="clock-display">
             <div class="clock" id="ind-clock">
@@ -860,7 +860,7 @@
 
           </div>
         </div>
-        <div class="col-xl-6 col-sm-6 py-4">
+        <div class="col-xl-3 col-sm-6 py-4 aus">
 
           <div class="clock-display">
             <div class="clock" id="aus-clock">
@@ -881,6 +881,50 @@
             <p class="clock-sub-text mb-2 mt-2 font-cs-n">Parramatta Sydney 2150 <br> NSW Australia</p>
           </div>
         </div>
+        <div class="col-xl-3 col-sm-6 py-4 ger">
+
+          <div class="clock-display">
+            <div class="clock" id="ger-clock">
+              <div class="hour">
+                <div class="hr" id="hr"></div>
+              </div>
+              <div class="min">
+                <div class="mn" id="mn"></div>
+              </div>
+              <div class="sec">
+                <div class="sc" id="sc"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center text-white mt-4">
+            <h5 class="font-cs-n">Germany</h5>
+            <p class="clock-sub-text mb-2 mt-2 font-cs-n">Kohlrauschstr 15(DG),30161<br>Hanover Lower Saxony Germany</p>
+
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 py-4 usa">
+
+          <div class="clock-display">
+            <div class="clock" id="usa-clock">
+              <div class="hour">
+                <div class="hr" id="hr"></div>
+              </div>
+              <div class="min">
+                <div class="mn" id="mn"></div>
+              </div>
+              <div class="sec">
+                <div class="sc" id="sc"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center text-white mt-4">
+            <h5 class="font-cs-n">United Statess</h5>
+            <p class="clock-sub-text mb-2 mt-2 font-cs-n">38 Garfield street NJ07643 <br> New Jersey, USA</p>
+          </div>
+        </div>
+
       </div>
 
 
@@ -919,16 +963,16 @@
           </div>
 
           <div class="ze-outro-address row-md-center">
-            <a href="https://api.whatsapp.com/send?phone=+918097279994&amp;text=hey" target="_blank"
-              class="color-gray font-cs-n email-hover row-md-center"><img src="./Images/india_flag_icon.svg"> &nbsp; +91
-              80
-              9727 9994</a>
             <a href="https://api.whatsapp.com/send?phone=+918154831233&amp;text=hey" target="_blank"
               class="color-gray font-cs-n email-hover mt-2"><img src="./Images/india_flag_icon.svg"> &nbsp; +91
               81 5483 1233 &nbsp;</a>
             <a href="https://api.whatsapp.com/send?phone=+61413241384&amp;text=hey" target="_blank"
               class="color-gray font-cs-n email-hover mt-2"><img src="./Images/aus_flag_icon.svg"> &nbsp; +61
               413 241 384 &nbsp; &nbsp;</a>
+            <a href="https://api.whatsapp.com/send?phone=+4917670018450&amp;text=hey" target="_blank"
+              class="color-gray font-cs-n email-hover mt-2"><img class="ger-flag-padding" src="./Images/ger_flag_icon.svg"> &nbsp; +49 176 7001 8450</a>
+            <a href="https://api.whatsapp.com/send?phone=+12016162440&amp;text=hey" target="_blank"
+              class="color-gray font-cs-n email-hover mt-2"><img src="./Images/usa_flag_icon.svg"> &nbsp; +1 201 616 2440 &nbsp; &nbsp;</a>
           </div>
 
         </div>
@@ -1135,17 +1179,28 @@
 </script>
 
 <script type="text/javascript">
-  const deg = 6;
+  const deg = 12;
 
   const indClock = document.getElementById('ind-clock')
   const ausClock = document.getElementById('aus-clock')
+  const gerClock = document.getElementById('ger-clock')
+  const usaClock = document.getElementById('usa-clock')
 
   const indHr = indClock.querySelector('#hr');
   const indMn = indClock.querySelector('#mn');
   const indSc = indClock.querySelector('#sc');
+  
   const ausHr = ausClock.querySelector('#hr');
   const ausMn = ausClock.querySelector('#mn');
   const ausSc = ausClock.querySelector('#sc');
+
+  const gerHr = gerClock.querySelector('#hr');
+  const gerMn = gerClock.querySelector('#mn');
+  const gerSc = gerClock.querySelector('#sc');
+
+  const usaHr = usaClock.querySelector('#hr');
+  const usaMn = usaClock.querySelector('#mn');
+  const usaSc = usaClock.querySelector('#sc');
 
   setInterval(() => {
     let indDay = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" }));
@@ -1158,6 +1213,16 @@
     let ausmm = ausDay.getMinutes() * deg;
     let ausss = ausDay.getSeconds() * deg;
 
+    let gerDay = new Date(new Date().toLocaleString("en-US", { timeZone: "Europe/Berlin" }));
+    let gerhh = gerDay.getHours() * 30;
+    let germm = gerDay.getMinutes() * deg;
+    let gerss = gerDay.getSeconds() * deg;
+
+    let usaDay = new Date(new Date().toLocaleString("en-US", { timeZone: "Australia/Sydney" }));
+    let usahh = usaDay.getHours() * 30;
+    let usamm = usaDay.getMinutes() * deg;
+    let usass = usaDay.getSeconds() * deg;
+
     indHr.style.transform = `rotateZ(${(indhh) + (indmm / 12)}deg)`;
     indMn.style.transform = `rotateZ(${(indmm)}deg)`;
     indSc.style.transform = `rotateZ(${(indss)}deg)`;
@@ -1165,6 +1230,14 @@
     ausHr.style.transform = `rotateZ(${(aushh) + (ausmm / 12)}deg)`;
     ausMn.style.transform = `rotateZ(${(ausmm)}deg)`;
     ausSc.style.transform = `rotateZ(${(ausss)}deg)`;
+
+    gerHr.style.transform = `rotateZ(${(gerhh) + (germm / 12)}deg)`;
+    gerMn.style.transform = `rotateZ(${(germm)}deg)`;
+    gerSc.style.transform = `rotateZ(${(gerss)}deg)`;
+
+    usaHr.style.transform = `rotateZ(${(usahh) + (usamm / 12)}deg)`;
+    usaMn.style.transform = `rotateZ(${(usamm)}deg)`;
+    usaSc.style.transform = `rotateZ(${(usass)}deg)`;
   })
 </script>
 
